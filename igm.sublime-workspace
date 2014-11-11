@@ -1,0 +1,995 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-nav"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"t",
+				"table"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"barnd",
+				"brand-orange"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"tab",
+				"table-header-group"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bo",
+				"bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 22556,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/partials-boxen.less",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/footer-navigation.less",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/buttons.less",
+			"settings":
+			{
+				"buffer_size": 384,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/variablen-theme.less",
+			"settings":
+			{
+				"buffer_size": 2105,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/accordion.less",
+			"settings":
+			{
+				"buffer_size": 488,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/mixins.less",
+			"settings":
+			{
+				"buffer_size": 1038,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/igm.less",
+			"settings":
+			{
+				"buffer_size": 2952,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/header-navigation.less",
+			"settings":
+			{
+				"buffer_size": 1924,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 13 files for \"max\"\n\nD:\\Aktuelle Jobs\\igm_nrw\\html\\less\\footer-navigation.less:\n   60  		color: @white;\n   61  	}	\n   62: @media (max-width: @screen-xs) {\n   63  	.add-join li {padding-bottom: 20px;}\n   64  }\n\nD:\\Aktuelle Jobs\\igm_nrw\\html\\less\\partials-boxen.less:\n    4  .blue-container { background-color: @brand-blue;}\n    5  \n    6: @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {\n    7     \n    8  }\n    9  \n   10: @media (max-width: @screen-xs-max){\n   11    \n   12  }\n\n5 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 532,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "less/font-icons.less",
+			"settings":
+			{
+				"buffer_size": 1764,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install	",
+				"Package Control: Install Package"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove	",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Aktuelle Jobs/igm_nrw/html",
+		"/D/Aktuelle Jobs/igm_nrw/html/bower_components",
+		"/D/Aktuelle Jobs/igm_nrw/html/bower_components/jquery",
+		"/D/Aktuelle Jobs/igm_nrw/html/less"
+	],
+	"file_history":
+	[
+		"/D/Aktuelle Jobs/polyform/polyform/www/styles/polyform.css",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/igm.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/header-nav-dropdown.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/mixins.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/Gruntfile.js",
+		"/D/Aktuelle Jobs/igm_nrw/html/fonts/icon_font_docs/style.css",
+		"/C/Users/Eva/Desktop/igm_neu/font_IGM_NRW_2/style.css",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/variablen-theme.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/footer-navigation.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/images.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/slider.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/page-sections.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/partials-boxen.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/font-icons.less",
+		"/D/Aktuelle Jobs/fitbox/web/less/fce-accordion.less",
+		"/D/Aktuelle Jobs/fitbox/web/less/fce-txt-content.less",
+		"/D/Aktuelle Jobs/fitbox/web/less/fce-tabs-mobil.less",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/type.less",
+		"/D/Aktuelle Jobs/fitbox/web/less/fce-icons.less",
+		"/D/Aktuelle Jobs/igm_nrw/material/IGM_NRW_Toolbox/Material/Icons/igm_wortmarke.svg",
+		"/D/Aktuelle Jobs/igm_nrw/html/css/ie7.css",
+		"/D/Aktuelle Jobs/igm_nrw/html/fonts/icon_font_docs/selection.json",
+		"/D/Aktuelle Jobs/igm_nrw/html/less/theme/header-navigation.less",
+		"/D/Aktuelle Jobs/pharma-waldhof/web/docs/examples/navbar-fixed-top/index.html",
+		"/D/Aktuelle Jobs/pharma-waldhof/web/docs/examples/navbar-fixed-top/navbar-fixed-top.css",
+		"/C/Users/Eva/Desktop/grunt-laravel-master/grunt-laravel-master/Gruntfile.js",
+		"/D/Aktuelle Jobs/igm_nrw/html/js/main.js",
+		"/C/Users/Eva/Desktop/grunt-laravel-master/grunt-laravel-master/bower.json",
+		"/C/Users/Eva/Desktop/grunt-laravel-master/grunt-laravel-master/composer.json",
+		"/C/Users/Eva/Desktop/grunt-laravel-master/grunt-laravel-master/package.json",
+		"/D/Aktuelle Jobs/igm_nrw/html/package.json",
+		"/D/Aktuelle Jobs/keine gentechnik/html/index.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/carousel.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/nachricht.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/aktionen.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/images.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/landingpage-icons.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/typo.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/partials-boxen.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/keine-gentechnik.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/forms.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/landingpage-teaser.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/variablen-kg.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/bower_components/bootstrap/less/variables.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/header.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/font-icons.less",
+		"/G/WD SmartWare.swstor/EVAASUSPC/Volume.6c137e68.4728.469d.9f05.849518f05716/Aktuelle Jobs/keine gentechnik/html/less/theme/landingpage-teaser@8f5d7a05af724c3b9c4d1793e72e3cc4.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/ueberuns.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/page-sections.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/wissensthema.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/nachrichten.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/wissen.html",
+		"/D/Aktuelle Jobs/fitbox/web/config/userTSconfig.txt",
+		"/D/Aktuelle Jobs/amini/html/Typoscript/setup.ts",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/icon-effect.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/icon-svg-sprite.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/icon-png-data.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/iconizr-png-sprite.css",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/fonts.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/nav-header.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/g.css",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/footer.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/js/appendaround.js",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/appendaround.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/breadcrumb.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/partials.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/elements.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/mixins.less",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/nav-footer.less",
+		"/D/Aktuelle Jobs/studentenwerk-hgw/web/js/document.ready.js",
+		"/D/Aktuelle Jobs/keine gentechnik/html/less/theme/col-grid.less",
+		"/D/Aktuelle Jobs/evelyn-hendreich/www/foundation/kooperation.html",
+		"/D/Aktuelle Jobs/amini/html/docs/examples/carousel/carousel.css",
+		"/D/Aktuelle Jobs/amini/html/docs/examples/carousel/index.html",
+		"/D/Aktuelle Jobs/keine gentechnik/html/images/icons/acker.svg",
+		"/D/Aktuelle Jobs/keine gentechnik/material/final/SVG_icons/acker-04.svg"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\Aktuelle Jobs\\igm_nrw\\html\\less",
+			"D:\\Aktuelle Jobs\\keine gentechnik\\html\\less\\theme",
+			"",
+			"D:\\Aktuelle Jobs\\keine gentechnik\\html",
+			"D:\\Aktuelle Jobs\\keine gentechnik\\html\\less",
+			"D:\\Aktuelle Jobs\\keine gentechnik\\html",
+			"D:\\Aktuelle Jobs\\keine gentechnik\\html\\less\\theme",
+			"D:\\Aktuelle Jobs\\keine gentechnik\\html\\bower_components\\bootstrap\\less"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tarifinfo",
+			"20px",
+			"max",
+			"min-",
+			"<i>",
+			"255",
+			" \n",
+			" {",
+			"trans",
+			"collapse03",
+			"heading03",
+			"collapse03",
+			"heading03",
+			"collapse03",
+			"heading03",
+			"collapse03",
+			"heading03",
+			"collapseDrei",
+			"collapseZwei",
+			"collapseEins",
+			"überschriftDrei",
+			"überschriftZwei",
+			"mitglie",
+			" {",
+			"lupe",
+			"border",
+			"		\n",
+			"=\"\"",
+			"{&:",
+			"}}",
+			"mitglied",
+			"facebook",
+			"mitglied",
+			"twitter",
+			"igm_wortmarke",
+			";}",
+			"{ c",
+			"\">",
+			"footer",
+			"ap-width",
+			"grid-gutter-width",
+			"3em",
+			"4",
+			"animation",
+			"shadow",
+			"h1",
+			"\n              ",
+			"');",
+			" {",
+			"\";",
+			" {",
+			"theme/",
+			"Zu Food",
+			"faceboo",
+			"action",
+			"h3",
+			"material",
+			"slider",
+			"</div></figcaption>",
+			"figcaption><div>",
+			";       ",
+			"<i>",
+			"knowledge-icons",
+			"@margin-box",
+			"60",
+			"support",
+			" class=\"graybox\"",
+			"share",
+			"sidebar-aside",
+			"newsletter",
+			"form-control",
+			"extended",
+			"Filter",
+			"box",
+			"box b",
+			"box",
+			"brandcolor-box",
+			"box",
+			"pass",
+			"regional",
+			"map",
+			"graybox",
+			"aside",
+			"asside",
+			"aside",
+			"btn",
+			"bzn",
+			"lorem",
+			"fonts",
+			"-dims",
+			"a",
+			"<figure><a href=\"#\"",
+			"icons/",
+			"<i>",
+			"</p>",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci reprehenderit impedit nihil quia ad vero, eum! Nesciunt, natus cupiditate reiciendis.",
+			"<div>",
+			"Lorem ipsum",
+			"Lorem",
+			"lorem",
+			"Lorem",
+			"</div>",
+			"</figure>",
+			"<div>",
+			"</div>",
+			"<div>",
+			"div",
+			"figure",
+			"service-banner-form",
+			"servce-banner-form",
+			"@media (min-width: @screen-sm-min){\n  .share-btns {\n    float: right;\n  }\n}",
+			"Neue Techniken",
+			"12",
+			"row",
+			"div",
+			"lefr",
+			"img",
+			"7px",
+			"headline",
+			"nav",
+			"h2",
+			"<i></i>",
+			"span",
+			"</i>",
+			"<figcaption>Acker</figcaption>",
+			"span",
+			"figure",
+			"span"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"box box"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8796,
+								8796
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3714.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "less/partials-boxen.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "less/footer-navigation.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1119,
+								1119
+							],
+							[
+								1157,
+								1157
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 808.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "less/buttons.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								379,
+								379
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "less/variablen-theme.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "less/accordion.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "less/mixins.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								748,
+								748
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "less/igm.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2720,
+								2720
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "less/header-navigation.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1044,
+								1044
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										139,
+										142
+									],
+									[
+										387,
+										390
+									],
+									[
+										409,
+										412
+									],
+									[
+										459,
+										462
+									],
+									[
+										481,
+										484
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								485,
+								458
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "less/font-icons.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1297
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "igm.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"typo",
+				"less\\theme\\typo.less"
+			],
+			[
+				"",
+				"less\\theme\\header.less"
+			],
+			[
+				"header",
+				"less\\theme\\header.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"kein",
+				"D:\\Aktuelle Jobs\\keine gentechnik\\html\\keine-gentechnik.sublime-project"
+			],
+			[
+				"keine",
+				"D:\\Aktuelle Jobs\\keine gentechnik\\html\\keine-gentechnik.sublime-project"
+			],
+			[
+				"",
+				"D:\\Aktuelle Jobs\\keine gentechnik\\html\\keine-gentechnik.sublime-project"
+			],
+			[
+				"he",
+				"D:\\Aktuelle Jobs\\evelyn-hendreich\\www\\foundation\\hendreich.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
