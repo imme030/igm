@@ -1,0 +1,47 @@
+.btn {
+	text-transform: uppercase;
+	.border-radius(0);
+}
+	
+.btn-sm {
+	padding:  @grid-gutter-width/4 @grid-gutter-width/2;
+	.font-size(14);
+}
+.btn-md {
+	padding:  @grid-gutter-width/2 @grid-gutter-width;
+	.font-size(18);
+}
+.btn-trans {		
+	border: 1px solid @gray;
+	color: @text-color;
+}
+.btn-blue {
+	background-color: @brand-blue;
+	color: @white;
+	&:hover, &:focus{color: @white;}
+}
+
+a.btn-link {		
+	.btn;
+	.btn-trans;
+	}
+.link-path  {
+		padding:0;
+		margin: 0;
+		border-bottom: 1px solid @gray;
+		display: block;
+		li {
+			padding-bottom: 10px;
+			a {.font-size(15);}
+			
+		}
+ > li {
+    display: inline-block;
+
+    + li:before {
+      content: "ǀ\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 3px;
+      color: @gray;
+    }    
+  }
+}
