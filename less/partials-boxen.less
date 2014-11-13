@@ -1,6 +1,11 @@
+.container {margin-bottom: 40px;}
 //Boxen
 
-.gray-container { background-color: @gray; &.border-line { border-top: 1px solid @white;}}
+.gray-container { 
+	background-color: @gray; 
+	&.border-line { border-top: 1px solid @white;}
+	&.footer .container {margin-bottom: 0; padding: 25px;}
+}
 .blue-container { background-color: @brand-blue; color: @white;}
 .three-columns .row {
 	h3 {
@@ -15,7 +20,7 @@
 	}
 }
 .two-columns {
-	.row div, .row iframe{
+	.row > div, .row > iframe,.row > form{
 		.make-sm-column(6);
 	}
 }
