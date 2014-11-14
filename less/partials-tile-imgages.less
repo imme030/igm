@@ -1,0 +1,32 @@
+.tile {
+		 figure {
+		 	&.blue-container {
+		 		height: 220px;
+		 		padding: 25px;
+		 	}
+			.make-sm-column(4);
+			max-height: 220px;
+			overflow: hidden;
+			padding: 0;	
+			h2 {margin-top: 0;}
+			a {color: @white; .font-size(17);}
+			figcaption {
+		        font-style: normal;
+		        color: @white;
+		        .font-size(14);	
+		        height: 220px;
+		        width: 100%;
+		        position: absolute;
+			    background-color: rgba(0, 0, 0, 0.2);
+			    text-align: left;
+			    bottom: -230px;			   
+			    .transition(all 0.5s);
+			    padding: 100px 25px 25px 25px;
+			    .date {
+			    	border-bottom: 1px solid @white;
+			    }			   
+		      }    
+
+		    &:hover figcaption {bottom: 0; background-color: rgba(0, 0, 0, 0.6)}		
+	}
+}

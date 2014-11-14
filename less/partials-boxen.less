@@ -7,18 +7,21 @@
 	&.footer .container {margin-bottom: 0; padding: 25px;}
 }
 .blue-container { background-color: @brand-blue; color: @white;}
-.three-columns .row {
-	h3 {
-	.hl-border-line;
-	}
-	 div {
-		.make-sm-column(4);
-		figure {
-			max-height: 160px;
-			overflow: hidden;
+.three-columns {
+	&.teaser{
+		h3 {
+		.hl-border-line;
+		}
+		.row div {
+			.make-sm-column(4);
+			figure {
+				max-height: 160px;
+				overflow: hidden;
+			}
 		}
 	}
 }
+
 .two-columns {
 	.row > div, .row > iframe,.row > form{
 		.make-sm-column(6);
