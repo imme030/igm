@@ -1,11 +1,10 @@
 .tile {
 		 figure {
 		 	&.blue-container {
-		 		height: 220px;
+		 		height: auto;
 		 		padding: 25px;
 		 	}
-			.make-sm-column(4);
-			max-height: 220px;
+			.make-sm-column(4);			
 			overflow: hidden;
 			padding: 0;	
 			h2 {margin-top: 0;}
@@ -29,4 +28,30 @@
 
 		    &:hover figcaption {bottom: 0; background-color: rgba(0, 0, 0, 0.6)}		
 	}
+}
+@media (min-width: @screen-sm-min) {
+	.tile {
+			 figure{
+			 	max-height: 190px;
+			 	&.blue-container {
+			 		height: 190px;
+			 	} 
+			 	figcaption {
+			 		padding-top: 80px;
+			 	}
+			 }
+		 }  
+}
+@media (min-width: @screen-md-min) {
+	.tile {
+			 figure{
+			 	max-height: 220px;
+			 	&.blue-container {
+			 		height: 220px;
+			 	} 
+			 	figcaption {
+			 		padding-top: 100px;
+			 	}
+			 }
+		 }  
 }

@@ -99,31 +99,39 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 28083,
+				"buffer_size": 32608,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/header-nav-dropdown.less",
+			"file": "less/variablen-theme.less",
 			"settings":
 			{
-				"buffer_size": 1993,
+				"buffer_size": 2303,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/forms.less",
+			"file": "less/type.less",
 			"settings":
 			{
-				"buffer_size": 694,
+				"buffer_size": 282,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "less/partials-boxen.less",
+			"file": "less/partials-tile-imgages.less",
 			"settings":
 			{
-				"buffer_size": 816,
+				"buffer_size": 1124,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/igm.less",
+			"settings":
+			{
+				"buffer_size": 3019,
 				"line_ending": "Windows"
 			}
 		}
@@ -202,17 +210,15 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm",
-		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/js",
-		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less"
-	],
 	"file_history":
 	[
+		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/buttons-links.less",
+		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/forms.less",
 		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/variablen-theme.less",
-		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/page-sections.less",
 		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/js/select.js",
+		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/type.less",
+		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/header-nav-dropdown.less",
+		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/page-sections.less",
 		"/D/Aktuelle Jobs/igm_nrw/webtemplate/igm/less/igm.less",
 		"/D/Aktuelle Jobs/iges/html/iges.sublime-project",
 		"/D/Aktuelle Jobs/hanno_brachmann/cds/hanno.css",
@@ -302,7 +308,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -324,6 +330,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p",
+			"<p>2,2 Prozent mehr Geld ab dem 1. Mai</p>",
+			"p",
+			"P",
+			"p",
+			"h3",
+			"png",
+			"dummy",
+			"</div>",
+			"<div>",
+			"label",
+			"select",
 			"two-columns",
 			"container",
 			"main",
@@ -439,19 +457,7 @@
 			"Lorem",
 			"</div>",
 			"</figure>",
-			"<div>",
-			"</div>",
-			"<div>",
-			"div",
-			"figure",
-			"service-banner-form",
-			"servce-banner-form",
-			"@media (min-width: @screen-sm-min){\n  .share-btns {\n    float: right;\n  }\n}",
-			"Neue Techniken",
-			"12",
-			"row",
-			"div",
-			"lefr"
+			"<div>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -470,7 +476,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -479,15 +485,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28083,
+						"buffer_size": 32608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								996,
-								1000
+								20780,
+								20780
 							]
 						],
 						"settings":
@@ -498,7 +504,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 109.0,
+						"translation.y": 8763.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -506,81 +512,77 @@
 				},
 				{
 					"buffer": 1,
-					"file": "less/header-nav-dropdown.less",
+					"file": "less/variablen-theme.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1993,
+						"buffer_size": 2303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1969,
-								1969
+								1829,
+								1828
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1240.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "less/type.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "less/forms.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 694,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								677,
-								677
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "less/partials-boxen.less",
+					"file": "less/partials-tile-imgages.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 816,
+						"buffer_size": 1124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								417,
-								417
+								309,
+								309
 							]
 						],
 						"settings":
@@ -589,11 +591,40 @@
 							"syntax": "Packages/LESS/LESS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 171.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "less/igm.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2984,
+								2984
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -601,7 +632,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -637,7 +668,7 @@
 	"project": "igm.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -666,12 +697,12 @@
 		"selected_items":
 		[
 			[
-				"kein",
-				"D:\\Aktuelle Jobs\\keine gentechnik\\html\\keine-gentechnik.sublime-project"
+				"",
+				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\igm.sublime-workspace"
 			],
 			[
-				"",
-				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\igm.sublime-project"
+				"kein",
+				"D:\\Aktuelle Jobs\\keine gentechnik\\html\\keine-gentechnik.sublime-project"
 			],
 			[
 				"keine",
