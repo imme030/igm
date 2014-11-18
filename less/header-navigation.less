@@ -11,8 +11,7 @@
 	background-color: transparent;
   border: 0;
   margin-bottom: 20px;
-  min-height: 115px; 
-  .navbar-header {width: 313px;}   
+  min-height: 115px;  
   a.logo {
       padding: 20px 0 20px 0;
       display: inline-block;
@@ -86,5 +85,10 @@
       }
     } 
     i.icon-search {color: @text-color;}
+  }
+}
+@media (min-width: @screen-md){
+  .header-mainnav .navbar-header {
+    width: 313px;
   }
 }
