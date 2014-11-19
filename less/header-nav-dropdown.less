@@ -29,6 +29,7 @@
             margin-top: 0;
             li a {
               color: @text-color;
+              font-weight: 600;
             }
              div {
               &.description {
@@ -63,7 +64,28 @@
       }
   } 
 }
-
-  
-
 .navbar.header-mainnav .container {margin-bottom: 0;}
+
+// Submenü
+.header-mainnav .navbar-collapse li.dropdown.dropdown-submenu.open > a:after{background: none;}
+.header-mainnav .dropdown.open .dropdown-menu div.part .dropdown-submenu{
+  &.open a {
+  .icon-arrow_right:before{content: "\e602";}
+  }
+   a {
+        .icon-arrow_right {
+          margin: 10px;  float: right;  
+        }
+      }
+   .dropdown-menu {
+    position: relative;
+    .box-shadow( 0 0 0 0 rgba(0, 0, 0, 0));
+    li { padding: 0;  }
+     a {
+        border: 0; 
+        line-height: 35px;
+        font-weight: normal;        
+      }
+  } 
+
+}

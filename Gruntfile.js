@@ -17,13 +17,13 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: 'bower_components/bootstrap/js/*.js',
-        dest: 'js/igm.js'
+        dest: 'js/bootstrap.js'
       }
     },
    uglify: {
         dist: {
             files: {
-                'js/igm.js': 'js/igm.js'               
+                'js/bootstrap.js': 'js/bootstrap.js'               
             }
         }
     },
