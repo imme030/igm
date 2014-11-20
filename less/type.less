@@ -12,3 +12,40 @@ h5{  .font-size(16);}
   .column-count(2);
   p {.hypens-txt;}   
 }
+.standalone-hl.container {
+	margin-bottom: 25px;
+	h2, h3, h4, h5, h6 {
+	padding-left: 0;
+	margin-left: @grid-gutter-width/2;
+	&.border {
+		border-bottom: 1px solid #000;
+	 	padding-bottom: 25px;
+		}
+	}
+}
+.marked {
+	background-color: @brand-red;
+	padding: 7px;
+	color: @white;
+	.font-size(16);
+	margin-left: @grid-gutter-width/2;
+}
+
+blockquote {
+	.font-size(22);
+	font-style: italic;
+	background-color: transparent;
+	margin: 0 0 25px 0;
+	padding:0;
+	quotes: "\201C""\201D";
+	border: 0;
+}
+blockquote:after, blockquote:before {
+  color: @black;
+  content: open-quote;
+  .font-size(22);
+  line-height: 0.1em;  
+  vertical-align:0;
+}
+blockquote:before {content:"\201C"; margin-right: 0.25em;}
+blockquote:after {content:"\201D"; margin-left: 0.25em;}
