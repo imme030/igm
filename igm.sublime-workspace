@@ -99,7 +99,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 34717,
+				"buffer_size": 35596,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/igm.css",
+			"settings":
+			{
+				"buffer_size": 99568,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +115,7 @@
 			"file": "less/variablen-theme.less",
 			"settings":
 			{
-				"buffer_size": 2303,
+				"buffer_size": 2528,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +139,7 @@
 			"file": "less/igm.less",
 			"settings":
 			{
-				"buffer_size": 3049,
+				"buffer_size": 3089,
 				"line_ending": "Windows"
 			}
 		}
@@ -476,7 +484,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -485,15 +493,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34717,
+						"buffer_size": 35596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2742,
-								2745
+								0,
+								0
 							]
 						],
 						"settings":
@@ -507,24 +515,53 @@
 						"translation.y": 684.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "less/variablen-theme.less",
+					"file": "css/igm.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2303,
+						"buffer_size": 99568,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1829,
-								1828
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "less/variablen-theme.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -536,11 +573,11 @@
 						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "less/type.less",
 					"semi_transient": false,
 					"settings":
@@ -565,11 +602,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "less/partials-tile-imgages.less",
 					"semi_transient": false,
 					"settings":
@@ -595,16 +632,16 @@
 						"translation.y": 171.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "less/igm.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3049,
+						"buffer_size": 3089,
 						"regions":
 						{
 						},
@@ -624,7 +661,7 @@
 						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
