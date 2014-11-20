@@ -1,0 +1,61 @@
+
+// News Siete Tags
+.tags {
+	margin-right: @grid-gutter-width/2;
+	margin-left: @grid-gutter-width/2;
+	border: 1px solid @gray;
+	border-width: 1px 0;
+	padding: 10px 0;
+	span{
+		text-transform: uppercase;
+		color: @black;
+		padding-right: 5px;
+	}
+	a {
+		padding: 0 3px;
+		&:after {
+			content: " \01C0";
+			color: @black;
+			margin-left: 5px;
+		}
+		&:last-child:after{content: " ";}
+	}
+}
+
+.news-footer {
+> div {
+	padding-top: 20px;
+	a {color:  @black;}
+		&.share {			
+			.make-sm-column(2);
+		}
+		&.article-nav {			
+			.make-sm-column(4);
+		}
+		i {
+			.font-size(36);
+			float: left;
+			padding-right: 15px;
+			margin-top: 10px;
+		}
+		strong {
+			text-transform: uppercase;
+			.font-size(15);
+		}
+		.popover-content {
+			padding: 0 5px;
+			i {
+				.font-size(18);
+				padding: 11px;
+				margin: 0;
+				&.icon-facebook_alt {.font-size(26); margin-top: -4px;}
+				&.icon-twitter_alt {.font-size(22); }
+			}
+		}
+		.popover {
+			  .border-radius(0);
+			  .box-shadow(2px 0 5px rgba(0, 0, 0, 0.2));
+			  &.top {margin-top: -22px;}
+			}
+	}
+}

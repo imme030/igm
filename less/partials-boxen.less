@@ -1,9 +1,11 @@
 .container {margin-bottom: 40px;}
 //Boxen
-
+.white-container { 
+	background-color: @white; 
+}
 .gray-container { 
 	background-color: @gray; 
-	&.border-line { border-top: 1px solid @white;}
+	&.border-line { border-top: 1px solid @white; .container {margin-bottom: 0;}}
 	&.footer .container {margin-bottom: 0; padding: 25px;}
 }
 .blue-container { background-color: @brand-blue; color: @white;}
