@@ -2,6 +2,7 @@
    &.affix .navbar-collapse li.dropdown.open > a:after{ margin-top: -12px;}
   .navbar-collapse {
       li.dropdown { 
+        list-style: none;
        position: static; 
        .row {padding-bottom: 25px;} 
        &.open {
@@ -20,7 +21,7 @@
                 z-index: 1100;
               }    
           }          
-          ul.dropdown-menu { 
+          .dropdown-menu { 
             border: 0;
             border-radius: 0;
             background-color: @white;     
@@ -87,5 +88,14 @@
         font-weight: normal;        
       }
   } 
+
+}
+
+
+//umstellung ul div
+.header-mainnav .navbar-collapse .dropdown-menu ul {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
 
 }
