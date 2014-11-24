@@ -12,7 +12,7 @@
 .lightgray-container { background-color: @gray-light; }
 .three-columns {
 	&.teaser{
-		.row div {
+		.row > div {
 			.make-sm-column(4);
 			figure {
 				max-height: 160px;
@@ -28,7 +28,7 @@
 	}
 }
 .four-columns {
-	.row div, .row figure {
+	.row > div, .row > figure {
 		//.make-xs-column(6);
 		//.make-sm-column(4);
 		//.make-md-column(3);

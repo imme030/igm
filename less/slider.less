@@ -8,22 +8,6 @@
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
-/* Icon Fonts from flexslider
-*********************************/
-/* Font-face Icons */
-@font-face {
-	font-family: 'flexslider-icon';
-	src:url('../Fonts/flexslider-icon.eot');
-	src:url('../Fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-		url('../Fonts/flexslider-icon.woff') format('woff'),
-		url('../Fonts/flexslider-icon.ttf') format('truetype'),
-		url('../Fonts/flexslider-icon.svg#flexslider-icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-
 
 .slides img.stacked{
     display:none;
@@ -38,7 +22,6 @@ img.out{
     transition-timing-function: ease-in-out;
 }
 .stackslider .imgstack{
-    background:#000;
 	position: relative;
 	margin:0;
 }
@@ -82,7 +65,7 @@ img.out{
     top:30px;
     list-style-type: none;
     width: 95%;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid @white;
 }
 .slider02 .flex-control-nav li{
     float:left;
@@ -90,7 +73,7 @@ img.out{
 .slider02 .flex-control-nav a{
     display:none;
     font-size:1.8em;
-    color:#fff;
+    color:@white;
 }
 .slider02 .flex-control-nav a:hover{
     text-decoration: none;
@@ -118,12 +101,12 @@ img.out{
     text-align:center;
 }
 .slider02 .flex-direction-nav a{
-    color:#fff;
+    color:@white;
     text-decoration: none !important;
 }
 .slider02 .flex-direction-nav a:hover{
     text-decoration: none;
-    color:#e60005;
+    color:@brand-red;
 }
 .flex-direction-nav a:before  { 
     font-family: "IGM_NRW"; 
@@ -145,13 +128,13 @@ img.out{
     float:left;
     padding:5px 15px;
     margin-top:15px;
-    border:1px solid #fff;
-    color:#fff;
+    border:1px solid @white;
+    color:@white;
     text-transform: uppercase;
 }
 .slider02 .slides a:hover{
     color:#3ba2c3;
-    background-color:#fff;
+    background-color:@white;
 }
 
 
@@ -161,11 +144,12 @@ img.out{
     padding-bottom:40px;
 }
 
-.slider03:before{
-    content:"\201C";
-    color:#e60005;
+.slider03:before, .slider04 .flexslider:before{
+    font-family: "IGM_NRW"; 
+    content:"\e60c";
+    color:@brand-red;
     position:absolute;
-    font-size: 8em;
+    font-size: 26px;
     left: 0;
     top: 0;
     line-height: 0.8em;
@@ -218,7 +202,7 @@ img.out{
     height: 20px;
     border-radius: 10px;
     border:1px solid #999;
-    background: #fff;
+    background: @white;
     cursor:pointer;
 }
 .slider03 .flex-control-paging a.flex-active{
@@ -241,16 +225,9 @@ img.out{
 .slider04  .flexslider{
     padding: 0 0 60px 60px;
     position:relative;
+    &:before {top:15px;}
 }
-.slider04  .flexslider:before{
-    content:"\201C";
-    color:#e60005;
-    position:absolute;
-    font-size: 8em;
-    left: 0;
-    top: 0;
-    line-height: 0.8em;
-}
+
 .slider04 blockquote{
     font-size:1.8em;
 }
@@ -287,7 +264,7 @@ img.out{
     height: 20px;
     border-radius: 10px;
     border:1px solid #999;
-    background: #fff;
+    background: @white;
     cursor:pointer;
 }
 .slider04 .flex-control-paging a.flex-active{
@@ -327,7 +304,7 @@ img.out{
 }
 .slider06 .flex-direction-nav a:hover{
     text-decoration: none;
-    color:#e60005;
+    color:@brand-red;
 }
 .slider06 h2{
     margin:30px 0;
@@ -336,8 +313,18 @@ img.out{
 
 /* Media Queries
 ***********************/
-@media screen and (max-width: 1160px) {
+@media (max-width: 380px){
+    .stackslider .imgstack{  height: 250px; }  
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 380px){
+    .stackslider .imgstack{ height: 400px;  }  
+}
+@media (min-width: 500px){
+    .stackslider .imgstack{ height: 700px;  }  
+}
+@media (max-width: @screen-sm-max){
+  .slider02 .imgstack {
+      margin: 1em 4em 1em 0;
+    }
   
 }
