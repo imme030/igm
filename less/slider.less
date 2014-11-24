@@ -46,7 +46,7 @@ img.out{
 
 /*                        - - - - - - - -  slider02*/
 .slider02 .imgstack{
-	margin:1em 4em;
+	margin:1em 40px 1em 30px;
 }
 .slider02 .flexslider{
     padding-bottom: 40px;
@@ -322,9 +322,14 @@ img.out{
 @media (min-width: 500px){
     .stackslider .imgstack{ height: 700px;  }  
 }
-@media (max-width: @screen-sm-max){
+@media (min-width: @screen-sm){
+    .stackslider .imgstack{ height: auto;  }  
   .slider02 .imgstack {
-      margin: 1em 4em 1em 0;
-    }
-  
+      margin-left: 0;
+    }  
+}
+@media (min-width: @screen-md){
+  .slider02 .imgstack {
+      margin-left: 40px;
+    }  
 }
