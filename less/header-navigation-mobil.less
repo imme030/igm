@@ -1,18 +1,94 @@
-.navbar-toggle .iconbar {
-  border-radius: 1px;
-  display: block;
-  height: 2px;
-  width: 25px;
-  background-color: @black;
-  margin-bottom: 3px;
+.navbar-toggle {
+  margin-top: 18px;
+  .iconbar {
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: @black;
+    margin-bottom: 4px;
+  }
 }
 
+@media (min-width: @screen-sm){
+  .navbar-toggle {
+    margin-top: 28px;
+    .iconbar {
+      height: 4px;
+      width: 50px;
+      margin-bottom: 8px;
+    }
+  }
+}
+@media (min-width: @screen-sm)and(max-width: @screen-sm-max){
+  .header-mainnav.navbar-fixed-top {
+    min-height: 95px;  
+    .logo {  
+      padding: 18px 0 18px 0;
+      i {    
+        &.icon-igm_logo {color: @brand-red; .font-size(59);}
+        &.icon-nrw_wortmarke {color: #000000; .font-size(30); line-height: 70px;}
+      }
+    }     
+  }
+   
+}
 @media (max-width: @screen-sm-max){
+ 
+  .header-mainnav.navbar-fixed-top {
+    background-color: @white;      
+      .navbar-collapse{
+        .dropdown-submenu ul.dropdown-menu {
+          border-bottom: 1px solid @gray !important;
+        }
+        ul {
+          margin-top: 25px;
+          li a {font-weight: 600;}
+          li.dropdown.open .dropdown-menu { 
+            .row {padding-bottom: 0;}
+            .description {display: none;}
+            .box-shadow(0 0 0 0 rgba(0, 0, 0, 0.145) inset);
+            div.part {
+              margin-top: 0;
+              padding-left: 0;
+              padding-right: 0;
+              li {
+                padding: 0;
+                a {font-weight: normal;}
+              }
+            }
+          }
+        }
+       ul li.dropdown, ul > li {
+          &.open > a:after {background-image: none;}
+          a {
+            color: @text-color;
+            padding: 8px 0;
+          }        
+        }
+    } 
+    i.icon-search {color: @text-color;}
+  }
    .header-mainnav  .navbar-collapse {
     background-color: @white;
     ul > li a {     
       color: @black;
     }
   }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 100%;
+}
+}
 
+@media (max-width: @screen-xs-max){
+  .header-mainnav.navbar-fixed-top {
+    min-height: 55px;
+    .logo {  
+      padding: 5px 0 2px 12px;
+      i {    
+        &.icon-igm_logo {color: @brand-red; .font-size(55);}
+        &.icon-nrw_wortmarke {color: #000000; .font-size(28); line-height: 70px;}
+      }
+    }
+  }
 }
