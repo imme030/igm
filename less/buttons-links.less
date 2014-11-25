@@ -23,6 +23,27 @@
 	color: @white;
 	&:hover, &:focus{color: @white;}
 }
+.container.btn-placehoder {
+	height: 166px;
+	.row > div {.make-sm-column(12);}
+	margin-bottom: 0;
+}
+.download {.btn; .btn-trans;	&:before {content: "\e605";	}}
+ .member {.btn; .btn-blue;	&:before {content: "\e60f";	}}
+.download, .member {	
+	text-align: left;
+	width: 300px;
+	white-space: normal;
+	padding: 10px 20px 0 10px;
+	margin-right: 45px;
+	.font-size(18);
+	&:before {
+		font-family: 'IGM_NRW';
+		.font-size(60);
+		float: left;
+		margin: -15px 15px 0 0;
+	}
+}
 
 a.btn-link, a.btn-link:hover, a.btn-link:focus{		
 	.btn;
