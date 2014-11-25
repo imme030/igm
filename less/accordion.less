@@ -1,21 +1,30 @@
-.panel-heading {
+.panel-heading {	
 	background-color: @brand-red;
 	padding: 0 15px;
-	h1, h2, h3, h4, h5, h6 {
-		margin: 0 0 3px 0;
-		a {
-			display: inline-block;
-			line-height: 35px;
-			color: @white;
-			.font-size(18);
-			i {margin-right: 15px;}
-			i:before {content: "\e612";}
-			&:hover, &:focus {
-				text-decoration: none;
-				i:before {content: "\e60e";}
-			}			
+	margin: 0 0 3px 0;
+	h4 {
+		cursor: pointer;
+		margin: 0;	
+		font-weight: normal;	
+		display: inline-block;
+		line-height: 35px;
+		color: @white;
+		.font-size(18);
+		&:before {
+			font-family: 'IGM_NRW';
+			content: "\e612";
+			margin-right: 15px;
 		}
+		&:focus {
+			background-color: @brand-red;
+			color: @white;
+			text-decoration: none;
+			&:before {content: "\e60e";}
+		}			
 	}
+}
+.active .panel-heading {
+	h4:before {content: "\e60e";}
 }
 .panel-body {
 	padding: 15px;
