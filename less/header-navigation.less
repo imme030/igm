@@ -9,7 +9,8 @@
 .header-mainnav  {
   .row {margin-bottom: 0;}
 	background-color: transparent;
-  border: 0;
+  border: 1px solid @gray-light;
+  border-width: 0 0 1px 0;
   margin-bottom: 20px;
   min-height: 115px;  
   a.logo {
@@ -64,6 +65,8 @@
   	&.icon-search {
       color: @white; 
      font-size:25px;
+     border-left: 1px solid @white;
+     padding: 5px 0 5px 15px;
     }
   }
   &.affix {
@@ -84,7 +87,7 @@
         &.icon-nrw_wortmarke {color: #000000; .font-size(30); line-height: 70px;}
       }
     } 
-    i.icon-search {color: @text-color;}
+    i.icon-search {color: @text-color; border-color: @gray;}
   }
 }
 @media (min-width: @screen-md){
