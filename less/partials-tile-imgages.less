@@ -3,11 +3,21 @@
 		 	&.blue-container {
 		 		height: auto;
 		 		padding: 25px;
+		 		.font-size(22);
+		 		a {
+		 			&:before{
+		 				font-family: 'IGM_NRW';
+						.font-size(16);
+						content: "\e601";
+						margin-right: 10px;
+		 			}
+		 		}
 		 	}
 			.make-sm-column(4);			
 			overflow: hidden;
 			padding: 0;	
 			h2 {margin-top: 0;}
+			h3 a {.font-size(24);}
 			a {color: @white; .font-size(17);}
 			figcaption {
 		        font-style: normal;

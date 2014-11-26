@@ -40,7 +40,7 @@
 		}
 		.row p.member-btn, .row p.download-btn{	
 			border-color: @white;
-			.make-sm-column-offset(2);
+			.make-sm-column-offset(1);
 			margin-right: 0;
 			a {color: @white;}
 		}
@@ -65,8 +65,13 @@
 @media (min-width: @screen-md-min) {
 	.header-modul  {
 		.part3 .row p{
-			a {
-				.font-size(20);				
+			&.facebook-btn, &.twitter-btn, &.youtube-btn {
+				a {
+					.font-size(20);				
+				}
+			}
+			&.member-btn, &.download-btn{
+				.make-sm-column-offset(2);
 			}
 		}
 	}	
@@ -74,8 +79,10 @@
 @media (min-width: @screen-lg-min) {
 	.header-modul  {
 		.part3 .row p{
-			a {
-				.font-size(30);				
+			&.facebook-btn, &.twitter-btn, &.youtube-btn {
+				a {
+					.font-size(30);				
+				}
 			}
 		}
 	}	
