@@ -28,23 +28,36 @@
 	.row > div {.make-sm-column(12);}
 	margin-bottom: 0;
 }
-.download {.btn; .btn-trans;	&:before {content: "\e605";	}}
- .member {.btn; .btn-blue;	&:before {content: "\e60f";	}}
-.download, .member {	
-	text-align: left;
+.download-btn, .member-btn, .member-btn-blue{	
+	display: inline-block;	
+	border: 1px solid @gray;
 	width: 300px;
-	white-space: normal;
-	padding: 10px 20px 0 10px;
 	margin-right: 45px;
-	.font-size(18);
-	&:before {
-		font-family: 'IGM_NRW';
-		.font-size(60);
-		float: left;
-		margin: -15px 15px 0 0;
+	padding: 10px 20px 0 10px;
+	a {
+		text-align: left;
+		.font-size(18);
+		color: @text-color;
+		&:before {
+			font-family: 'IGM_NRW';
+			.font-size(60);
+			white-space: normal;
+			float: left;
+			margin: -15px 15px 0 0;
+		}
 	}
 }
-
+.facebook-btn a:before{ content: "\e609";}
+.twitter-btn a:before{ content: "\e618";}
+.youtube-btn a:before{ content: "\e619";}
+.download-btn  a:before {content: "\e605";}
+.member-btn  a:before, .member-btn-blue a:before {content: "\e60f";}
+.member-btn-blue {
+	color: @white; 
+	background-color: @brand-blue;
+	border: 1px solid @brand-blue;
+	a {color: @white;}
+}
 a.btn-link, a.btn-link:hover, a.btn-link:focus{		
 	.btn;
 	.btn-trans;

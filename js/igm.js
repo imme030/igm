@@ -12,11 +12,7 @@
         });
     // Accordion aktive Klasse
 
-   $('#accordion').collapse({
-  toggle: true
-
-})
-     $(".panel-heading h4").click(function(e) {
+    $(".panel-heading h4").click(function(e) {
         if( $(this).parent().parent().parent().hasClass("active") ) {
             $(this).parent().parent().parent().removeClass("active")
         } else {

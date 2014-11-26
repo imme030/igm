@@ -99,7 +99,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 35596,
+				"buffer_size": 57335,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +107,7 @@
 			"file": "css/igm.css",
 			"settings":
 			{
-				"buffer_size": 99568,
+				"buffer_size": 118715,
 				"line_ending": "Windows"
 			}
 		},
@@ -123,7 +123,7 @@
 			"file": "less/type.less",
 			"settings":
 			{
-				"buffer_size": 282,
+				"buffer_size": 1062,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "less/igm.less",
 			"settings":
 			{
-				"buffer_size": 3089,
+				"buffer_size": 3138,
 				"line_ending": "Windows"
 			}
 		}
@@ -493,7 +493,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35596,
+						"buffer_size": 57335,
 						"regions":
 						{
 						},
@@ -524,7 +524,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 99568,
+						"buffer_size": 118715,
 						"regions":
 						{
 						},
@@ -582,15 +582,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 1062,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								0,
+								0
 							]
 						],
 						"settings":
@@ -641,7 +641,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3089,
+						"buffer_size": 3138,
 						"regions":
 						{
 						},
@@ -735,7 +735,7 @@
 		[
 			[
 				"",
-				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\igm.sublime-workspace"
+				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\less\\igm-nrw.sublime-project"
 			],
 			[
 				"kein",

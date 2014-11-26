@@ -1,4 +1,5 @@
-
+// Beispiel hintergrund
+.header-modul.bsp2 {background-image: url("../Images/header-dummy2.jpg");}
 .header-modul {	
 	min-height: 60em;
 	background-image: url("../Images/header-dummy.jpg");
@@ -13,7 +14,11 @@
 		padding-top: 260px;
 		h1, h2 {
 		color: @white;
-	}
+		width: 70%;
+		&.brand-text {padding: 5px 10px;}
+		}
+		h2 {font-weight: normal; .font-size(35);}
+
 	}
 	.part2 {
 		.text-columns {
@@ -27,18 +32,31 @@
 		}
 	}
 	.part3 {
-		.row > div{
-			color: @white;
+		.row p.facebook-btn, .row p.twitter-btn, .row p.youtube-btn, .row h2{			
 			.make-sm-column(3);
+			color: @white;
+			line-height: 64px;
+			font-weight: 600;
+		}
+		.row p.member-btn, .row p.download-btn{	
+			border-color: @white;
+			.make-sm-column-offset(2);
+			margin-right: 0;
+			a {color: @white;}
+		}
+		.row > p {
+			color: @white;				
 			a {
 				.font-size(18);
 				color: @white;
-				line-height: 64px;
-				font-weight: 600;
-				i {
+				
+				&:before {
+					font-family: 'IGM_NRW';
+					font-weight: normal;
 					.font-size(64);
 					float: left;
 					padding-right: 20px;
+					color: @white;
 				}
 			}
 		}
@@ -46,7 +64,7 @@
 }
 @media (min-width: @screen-md-min) {
 	.header-modul  {
-		.part3 .row div{
+		.part3 .row p{
 			a {
 				.font-size(20);				
 			}
@@ -55,7 +73,7 @@
 }
 @media (min-width: @screen-lg-min) {
 	.header-modul  {
-		.part3 .row div{
+		.part3 .row p{
 			a {
 				.font-size(30);				
 			}
