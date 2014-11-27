@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="Images/basic/favicon.ico">
+    <link rel="icon" href="images/basic/favicon.ico">
 
     <title>IG Metall Nordrhein-Westfalen</title>
 
     <link href="css/igm.css" rel="stylesheet">
+    
+    <!-- THESLIDERS: -->
+    <link href="js/stackslider/stackslider.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bower_components/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -23,183 +26,149 @@
       <link href="css/ie7.css" rel="stylesheet">
     <![endif]-->
   </head>
-  <body> 
+  <body>
+   <!-- Fixierte Navbar -->
     <div class="navbar header-mainnav navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-         <div class="container">
-             <div class="navbar-header">
+      <div class="container">
+          <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Navigation ein-/ausblenden</span>
-              <span class="iconbar"></span>
-              <span class="iconbar"></span>
-              <span class="iconbar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="logo" href="#"><i class="icon-igm_logo pull-left"></i><i class="icon-nrw_wortmarke"></i></a>
-          </div> 
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#"> Über Uns</a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mitglieder</a>
-                    <div class="dropdown-menu" role="menu">
-                      <div class="container">
-                        <div class="row">
-                          <div class="description">
-                            <ul>
-                              <li>
-                                <h2>Mitglieder</h2>
-                                <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
-                              </li>
-                            </ul>
-                          </div>
-                           <div class="part">
-                              <ul>
-                                <li><a href="#">Mitglied werden</a></li>
-                               <li><a href="#">Argumente</a></li>
-                               <li><a href="#">Metall Rente</a></li>
-                              </ul>
-                           </div>                  
-                           <div class="part">
-                             <ul>
-                               <li><a href="#">Online Beitritt</a></li>
-                             </ul>
-                           </div>
-                          </div>
-                        </div>
-                      </div>
-                  </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">IGM NRW </a>
-                        <div class="dropdown-menu">
-                          <div class="container">
-                            <div class="row">
-                              <div class="description">
-                                <ul>
-                                  <li>
-                                    <h2>IGM NRW</h2>
-                                    <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
-                                  </li>
-                                </ul>
-                              </div>
-                            <div class="part">
-                                <ul>
-                                  <li><a href="#">Kontakt</a></li>
-                                  <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Presse <i class="icon-arrow_right"></i></a>
-                                    <ul class="dropdown-menu">
-                                      <li><a href="#">Pressemeldungen</a></li>
-                                      <li><a href="#">Meldungen</a></li>
-                                      <li><a href="#">Bilder / Logos</a></li>
-                                      <li><a href="#">Archiv</a></li>
-                                    </ul>
-                                  </li> 
-                                   <li><a href="#">Veranstaltungen</a></li>
-                                </ul>
-                           </div> 
-                           <div class="part">
-                             <ul>
-                               <li><a href="#">Links</a></li>
-                               <li><a href="#">Mitglieder</a></li>
-                               <li><a href="#">Werbekampagnen</a></li>
-                             </ul>
-                           </div>
-                          </div>
-                        </div>                           
-                      </div>
-                    </li>
-                    <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tarife</a>
-                  <div class="dropdown-menu">
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#"> Über Uns</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mitglieder</a>
+                <ul class="dropdown-menu" role="menu">
                   <div class="container">
                     <div class="row">
                       <div class="description">
-                        <ul>
-                          <li>
-                            <h2>Tarife</h2>
-                            <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
-                          </li>
-                        </ul>
+                        <li>
+                          <h2>Mitglieder</h2>
+                          <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
+                        </li>
                       </div>
                        <div class="part">
-                          <ul>
-                            <li><a href="#">Mitglied werden</a></li>
-                             <li><a href="#">Argumente</a></li>
-                             <li><a href="#">Metall Rente</a></li>
-                          </ul>
+                          <li><a href="#">Mitglied werden</a></li>
+                         <li><a href="#">Argumente</a></li>
+                         <li><a href="#">Metall Rente</a></li>
                        </div>                  
                        <div class="part">
-                         <ul>
-                           <li><a href="#">Online Beitritt</a></li>
-                         </ul>
+                         <li><a href="#">Online Beitritt</a></li>
                        </div>
                       </div>
                     </div>
-                  </div>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">IGM NRW</a>
+                  <ul class="dropdown-menu" role="menu">
+                  <div class="container">
+                    <div class="row">
+                      <div class="description">
+                        <li>
+                          <h2>IGM NRW</h2>
+                          <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
+                        </li>
+                      </div>
+                       <div class="part">
+                          <li><a href="#">Kontakt</a></li>
+                         <li><a href="#">Archiv</a></li>
+                         <li><a href="#">Metall Rente</a></li>
+                       </div>                  
+                       <div class="part">
+                         <li><a href="#">Online Beitritt</a></li>
+                       </div>
+                      </div>
+                    </div>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tarife</a>
+                  <ul class="dropdown-menu" role="menu">
+                  <div class="container">
+                    <div class="row">
+                      <div class="description">
+                        <li>
+                          <h2>Tarife</h2>
+                          <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
+                        </li>
+                      </div>
+                       <div class="part">
+                          <li><a href="#">Mitglied werden</a></li>
+                         <li><a href="#">Argumente</a></li>
+                         <li><a href="#">Metall Rente</a></li>
+                       </div>                  
+                       <div class="part">
+                         <li><a href="#">Online Beitritt</a></li>
+                       </div>
+                      </div>
+                    </div>
+                  </ul>
               </li>
              <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themen</a>
-                   <div class="dropdown-menu" role="menu">
+                   <ul class="dropdown-menu" role="menu">
                   <div class="container">
                     <div class="row">
                       <div class="description">
-                        <ul>
-                          <li>
-                            <h2>Themen</h2>
-                            <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
-                          </li>
-                        </ul>
+                        <li>
+                          <h2>Themen</h2>
+                          <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
+                        </li>
                       </div>
                        <div class="part">
-                          <ul>
-                            <li><a href="#">Mitglied werden</a></li>
-                           <li><a href="#">Argumente</a></li>
-                           <li><a href="#">Metall Rente</a></li>
-                          </ul>
+                          <li><a href="#">Mitglied werden</a></li>
+                         <li><a href="#">Argumente</a></li>
+                         <li><a href="#">Metall Rente</a></li>
                        </div>                  
                        <div class="part">
-                         <ul>
-                           <li><a href="#">Online Beitritt</a></li>
-                         </ul>
+                         <li><a href="#">Online Beitritt</a></li>
                        </div>
                       </div>
                     </div>
-                  </div>
+                  </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aktiv im Betrieb</a>
-                   <div class="dropdown-menu" role="menu">
+                   <ul class="dropdown-menu" role="menu">
                   <div class="container">
                     <div class="row">
                       <div class="description">
-                        <ul>
-                          <li>
-                            <h2>Aktiv im Betrieb</h2>
-                            <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
-                          </li>
-                        </ul>
+                        <li>
+                          <h2>Aktiv im Betrieb</h2>
+                          <p>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile. Alles rund um Rechung und Gehalt, bis hin zu Untertsützung und Rückhalt einer Straken Gemeinschaft, wir kümmern uns persönlich umd zuverlässig um unsere Mtiglieder.</p>
+                        </li>
                       </div>
                        <div class="part">
-                          <ul>
-                            <li><a href="#">Mitglied werden</a></li>
-                           <li><a href="#">Argumente</a></li>
-                           <li><a href="#">Metall Rente</a></li>
-                          </ul>
+                          <li><a href="#">Mitglied werden</a></li>
+                         <li><a href="#">Argumente</a></li>
+                         <li><a href="#">Metall Rente</a></li>
                        </div>                  
                        <div class="part">
-                         <ul>
-                           <li><a href="#">Online Beitritt</a></li>
-                         </ul>
+                         <li><a href="#">Online Beitritt</a></li>
                        </div>
                       </div>
                     </div>
-                  </div>
+                  </ul>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../navbar/"><i class="icon-search"></i></a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div><!--/.nav-collapse --></div>
     </div>
-</div>
-<!-- Slider Header -->
-
+    
+    
+    <!-- THESLIDERS: -->
+    <div>
+        <div class="container">
+            <div class="row">
                 <div class="col-sm-12 topslider slider01">
                     <div class="display">
                         <div class="images">
@@ -226,7 +195,7 @@
                       <div class="filter">Themenfilter <span>Aktuelles</span></div>
                       <ul class="slides">
                         <li>
-                            <img src="images/slider/hi_01_sm.jpg" data-hires="images/slider/hi_01.jpg?1" />
+                            <img src="images/for_stackslider/hi_01_sm.jpg" data-hires="images/for_stackslider/hi_01.jpg?1" />
                             <header>
                                 <ul>
                                     <li>xxx1</li>
@@ -239,7 +208,7 @@
                             <p>"Gleiche Arbeit - Gleiches Geld" - das Ziel wollen wir erreichen. Wir sind mit dabei, wenn es gilt, Leiharbeit zu begrenzen oder Alternativen durchzusetzen. Wir helfen Betriebsräten, faire Regelungen für ihren Betrieb zu vereinbaren. Mit uns gibt es Muster-Betriebsvereinbarungen, Leiharbeiter-Sprechstunden und vieles mehr.</p>
                         </li>
                         <li>
-                            <img src="images/slider/hi_02_sm.jpg" data-hires="images/slider/hi_02.jpg?2" />
+                            <img src="images/for_stackslider/hi_02_sm.jpg" data-hires="images/for_stackslider/hi_02.jpg?2" />
                             <header>
                                 <ul>
                                     <li>xxx1</li>
@@ -252,7 +221,7 @@
                             <p>"Besser-statt-billiger"-Konzepte sind die nachhaltige Alternative zu Entlassungen. Wir zeigen neue Perspektiven auf, z. B. durch den organisierten Austausch mit anderen Betriebsräten. Gute Berater erfolgreich zu nutzen und Beschäftigte zu beteiligen - das unterstützen wir.</p>
                         </li>
                         <li>
-                            <img src="images/slider/hi_03_sm.jpg" data-hires="images/slider/hi_03.jpg?3" />
+                            <img src="images/for_stackslider/hi_03_sm.jpg" data-hires="images/for_stackslider/hi_03.jpg?3" />
                             <header>
                                 <ul>
                                     <li>xxx1</li>
@@ -265,7 +234,7 @@
                             <p>Wir organisieren den direkten Dialog von Betriebsräten und Wissenschaftlern, um aufzuzeigen, welche innovativen Strategien zur Entwicklung und Sicherung industrieller Arbeit und Dienstleistung beitragen. Die Betriebsräte können Ansatzpunkte für betriebliche Lösungen entwickeln und auf ihre Situation anwenden.</p>
                         </li>
                         <li>
-                            <img src="images/slider/hi_04_sm.jpg" data-hires="images/slider/hi_04.jpg?4" />
+                            <img src="images/for_stackslider/hi_04_sm.jpg" data-hires="images/for_stackslider/hi_04.jpg?4" />
                             <header>
                                 <ul>
                                     <li>xxx1</li>
@@ -278,7 +247,7 @@
                             <p>Gemeinsam mit Betriebsräten und Beschäftigten sichern wir Standorte und Arbeitsplätze. Die Entwicklung langfristiger und nachhaltiger Alternativen steht dabei an vorderster Stelle. Wir stehen unseren Betriebsräten mit Informations- und Beratungsangeboten zur Seite.</p>
                         </li>
                         <li>
-                            <img src="images/slider/hi_05_sm.jpg" data-hires="images/slider/hi_05.jpg?5" />
+                            <img src="images/for_stackslider/hi_05_sm.jpg" data-hires="images/for_stackslider/hi_05.jpg?5" />
                             <header>
                                 <ul>
                                     <li>xxx1</li>
@@ -295,107 +264,72 @@
                     <a id="scrolldown"></a>
                   
                 </div>
-
-  <!-- slider header end -->
-  <div class="container">
-    <div class="row">
-      <div>Abstand</div>
-    </div>
-  </div>
-    <div class="header-modul bsp2">
-      <div class="container part1">
-        <div class="row">
-          <div>           
-            <h1 class="brand-text">Warum ist eine Mitgliedschaft bei der IG Metall NRW so wichtig?</h1>
-          </div>
-        </div>
-      </div>
-      <div class="white-container">
-         <div class="container part2">
-             <p class="text-columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic molestias reiciendis quas iste, vel natus accusamus unde, corporis cumque animi ad. Earum, tenetur, repellendus. Voluptatibus vitae modi maxime, officiis harum vel consequuntur laborum, voluptate quis eius molestias consequatur, asperiores ipsa! Architecto cum placeat quia illo voluptas enim neque, id dolorum.</p>
-           </div>
-       </div> 
-        <div class="container part3">
-          <div class="row">
-            <p class="member-btn">
-              <a href="#">Jetzt online Mitglied werden</a>
-            </p>
-            <p class="download-btn">
-              <a href="#" class="download">Beitrittsformular herunterladen</a>
-            </p>
-          </div>
-        </div>      
-    </div> 
-        <div class="header-modul">
-      <div class="container part1">
-        <div class="row">
-          <div>
-            <h2>IG Metall NRW</h2>
-            <h1>Stark in Stahl</h1>
-          </div>
-        </div>
-      </div>
-      <div class="white-container">
-         <div class="container part2">
-             <p class="text-columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic molestias reiciendis quas iste, vel natus accusamus unde, corporis cumque animi ad. Earum, tenetur, repellendus. Voluptatibus vitae modi maxime, officiis harum vel consequuntur laborum, voluptate quis eius molestias consequatur, asperiores ipsa! Architecto cum placeat quia illo voluptas enim neque, id dolorum.</p>
-           </div>
-       </div> 
-        <div class="container part3">
-          <div class="row">
-            <h2>Stark im Web</h2>
-            <p class="youtube-btn"><a href="#"> Youtube</a></p>
-            <p class="facebook-btn"><a href="#"> Facebook</a></p>
-            <p class="twitter-btn"><a href="#"> Twitter</a></p>
-          </div>
-        </div>      
-    </div>
-<!-- THESLIDERS: -->
-    <div class="blue-container">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-4">                
-                         <h2>Unsere Erfolge in NRW</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto mollitia fugiat non corporis maxime vitae facere nisi quisquam praesentium! Accusamus, corporis ad quidem doloremque rerum dolorem officiis maiores nisi libero animi voluptatibus eaque laudantium, expedita quos. Natus eos voluptatum molestiae asperiores, magni dolorem praesentium distinctio nemo qui, recusandae, in libero!</p>
-                          <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veniam explicabo voluptatem ipsa dolor aspernatur distinctio magnam, labore sequi illum!</strong></p>
-                    </div>                    
-                    <div class="col-md-8 stackslider slider02">
-                        <div class="col-sm-6">
-                            <div class="imgstack">
-                            
-                            </div>
-                        </div>
-                        <div class="col-sm-6 flexslider">
-                          <ul class="slides">
-                            <li>
-                                <h2>Leiharbeit</h2>
-                                <div>"Gleiche Arbeit - Gleiches Geld" - das Ziel wollen wir erreichen. Wir sind mit dabei, wenn es gilt, Leiharbeit zu begrenzen oder Alternativen durchzusetzen. Wir helfen Betriebsräten, faire Regelungen für ihren Betrieb zu vereinbaren. Mit uns gibt es Muster-Betriebsvereinbarungen, Leiharbeiter-Sprechstunden und vieles mehr.</div>
-                                <a href="#">Aktuelle Infos zu Leiharbeit</a>
-                                <img class="stacked" src="Images/slider/slider-blue_01.png" />
-                            </li>
-                            <li>
-                                <h2>Projekt besser: Zukunft!</h2>
-                                <div>"Besser-statt-billiger"-Konzepte sind die nachhaltige Alternative zu Entlassungen. Wir zeigen neue Perspektiven auf, z. B. durch den organisierten Austausch mit anderen Betriebsräten. Gute Berater erfolgreich zu nutzen und Beschäftigte zu beteiligen - das unterstützen wir.</div>
-                                <a href="#">Projekt besser: Zukunft!</a>
-                                <img class="stacked" src="Images/slider/slider-blue_02.png" />
-                            </li>
-                            <li>
-                                <h2>Projekt Kompetenz & Innovation</h2>
-                                <div>Wir organisieren den direkten Dialog von Betriebsräten und Wissenschaftlern, um aufzuzeigen, welche innovativen Strategien zur Entwicklung und Sicherung industrieller Arbeit und Dienstleistung beitragen. Die Betriebsräte können Ansatzpunkte für betriebliche Lösungen entwickeln und auf ihre Situation anwenden.</div>
-                                <a href="#">Projekt Kompetenz & Innovation</a>
-                                <img class="stacked" src="Images/slider/slider-blue_03.png" />
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
             </div>
         </div> 
     </div> <!-- / blue  -->  
     
     
     <!-- THESLIDERS: -->
+    <div class="blue-container">
         <div class="container">
             <div class="row">
-                    <div class="col-sm-7 stackslider slider03">
+                <div class="col-sm-12">
+                
+                    <div class="col-md-4">                
+                        <h1>Unsere Erfolge in NRW</h1>
+                        <p>Dieses Beispiel ist eine schnelle Übung, um zu zeigen, wie die Standard-Navbar, die statische und die oben fixierte Navbar funktionieren. Es enthält responsives CSS und HTML, passt sich also der Breite deines Bildschirms oder Browser-Fensters an.</p>
+                        <p>Um den Unterschied zwischen statischen und oben fixierten Navbars zu sehen, scrolle einfach etwas nach unten und vergleiche das Ergebnis.</p>
+                    </div>
+                    
+                    <div class="col-md-8 stackslider slider02">
+                        <div class="col-md-6">
+                            <div class="imgstack">
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-6 flexslider">
+                          <ul class="slides">
+                            <li>
+                                <h2>Leiharbeit</h2>
+                                <div>"Gleiche Arbeit - Gleiches Geld" - das Ziel wollen wir erreichen. Wir sind mit dabei, wenn es gilt, Leiharbeit zu begrenzen oder Alternativen durchzusetzen. Wir helfen Betriebsräten, faire Regelungen für ihren Betrieb zu vereinbaren. Mit uns gibt es Muster-Betriebsvereinbarungen, Leiharbeiter-Sprechstunden und vieles mehr.</div>
+                                <a href="#">Aktuelle Infos zu Leiharbeit</a>
+                                <img class="stacked" src="images/for_stackslider/img_01.jpg" />
+                            </li>
+                            <li>
+                                <h2>Projekt besser: Zukunft!</h2>
+                                <div>"Besser-statt-billiger"-Konzepte sind die nachhaltige Alternative zu Entlassungen. Wir zeigen neue Perspektiven auf, z. B. durch den organisierten Austausch mit anderen Betriebsräten. Gute Berater erfolgreich zu nutzen und Beschäftigte zu beteiligen - das unterstützen wir.</div>
+                                <a href="#">Projekt besser: Zukunft!</a>
+                                <img class="stacked" src="images/for_stackslider/img_02.jpg" />
+                            </li>
+                            <li>
+                                <h2>Projekt Kompetenz & Innovation</h2>
+                                <div>Wir organisieren den direkten Dialog von Betriebsräten und Wissenschaftlern, um aufzuzeigen, welche innovativen Strategien zur Entwicklung und Sicherung industrieller Arbeit und Dienstleistung beitragen. Die Betriebsräte können Ansatzpunkte für betriebliche Lösungen entwickeln und auf ihre Situation anwenden.</div>
+                                <a href="#">Projekt Kompetenz & Innovation</a>
+                                <img class="stacked" src="images/for_stackslider/img_03.jpg" />
+                            </li>
+                            <li>
+                                <h2>Krisenbewältigung</h2>
+                                <div>Gemeinsam mit Betriebsräten und Beschäftigten sichern wir Standorte und Arbeitsplätze. Die Entwicklung langfristiger und nachhaltiger Alternativen steht dabei an vorderster Stelle. Wir stehen unseren Betriebsräten mit Informations- und Beratungsangeboten zur Seite.</div>
+                                <a href="#">Krisenbewältigung</a>
+                                <img class="stacked" src="images/for_stackslider/img_04.jpg" />
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div> 
+    </div> <!-- / blue  -->  
+    
+    
+    <!-- THESLIDERS: -->
+    <div class="container2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                    <div class="col-md-7 stackslider slider03">
                         <div class="flexslider">
                             <ul class="slides citations">
                                 <li>
@@ -403,21 +337,21 @@
                                         <p>"Gleiche Arbeit - Gleiches Geld" - das Ziel wollen wir erreichen. Wir sind mit dabei, wenn es gilt, Leiharbeit zu begrenzen oder Alternativen durchzusetzen. Wir helfen Betriebsräten, faire Regelungen für ihren Betrieb zu vereinbaren. </p>
                                         <footer>Laura Ipsum, <br /> ACME Inc, Münster</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_01.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_01.jpg" />
                                 </li>
                                 <li>
                                     <blockquote>
                                         <p>"Besser-statt-billiger"-Konzepte sind die nachhaltige Alternative zu Entlassungen. Wir zeigen neue Perspektiven auf, z. B. durch den organisierten Austausch mit anderen Betriebsräten. </p>
                                         <footer>Erika M., <br /> Tamarisk GmbH, Dortmund</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_02.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_02.jpg" />
                                 </li>
                                 <li>
                                     <blockquote>
                                         <p>Wir organisieren den direkten Dialog von Betriebsräten und Wissenschaftlern, um aufzuzeigen, welche innovativen Strategien zur Entwicklung und Sicherung industrieller Arbeit und Dienstleistung beitragen. Nihil anim keffiyeh helvetica, cred nesciunt sapiente ea proident.</p>
                                         <footer>Noah Ark, <br /> Pop AG, Köln</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_03.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_03.jpg" />
                                 </li>
                             </ul>
                         </div>
@@ -426,28 +360,32 @@
                         </div>
                     </div>
                 
-                    <div class="col-sm-5">                
-                         <h2>Unsere Erfolge in NRW</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto mollitia fugiat non corporis maxime vitae facere nisi quisquam praesentium! Accusamus, corporis ad quidem doloremque rerum dolorem officiis maiores nisi libero animi voluptatibus eaque laudantium, expedita quos. Natus eos voluptatum molestiae asperiores, magni dolorem praesentium distinctio nemo qui, recusandae, in libero!</p>
-                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veniam explicabo voluptatem ipsa dolor aspernatur distinctio magnam, labore sequi illum!</strong></p>
-                        <a href="#" class="btn-blue">Jetzt Mitglied werden</a>
+                    <div class="col-md-5">                
+                        <h1>IGM-Mitglieder haben viele Vorteile</h1>
+                        <p>Dieses Beispiel ist eine schnelle Übung, um zu zeigen, wie die Standard-Navbar, die statische und die oben fixierte Navbar funktionieren. Es enthält responsives CSS und HTML, passt sich also der Breite deines Bildschirms oder Browser-Fensters an.</p>
+                        <p>Um den Unterschied zwischen statischen und oben fixierten Navbars zu sehen, scrolle einfach etwas nach unten und vergleiche das Ergebnis.</p>
+                        <a href="#">Jetzt Mitglied werden</a>
                     </div>
+                  
+                </div>
             </div>
         </div> 
-
+    </div> 
     
     
     <!-- THESLIDERS: -->
-    <div class="container">
-            <div class="row  stackslider slider04">
-                    <div class="col-sm-5">
+    <div class="container2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 stackslider slider04">
+                    <div class="col-md-5">
                         <div class="imgstack">
                         
                         </div>
                     </div>
                     
-                    <div class="col-sm-7">
-                        <h2>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile.</h2>
+                    <div class="col-md-7">
+                        <h1>Mitglied in der IG Metall zu sein, bietet Ihnen viele Vorteile.</h1>
                         <div class="flexslider">
                             <ul class="slides citations">
                                 <li>
@@ -455,46 +393,52 @@
                                         <p>"Gleiche Arbeit - Gleiches Geld" - das Ziel wollen wir erreichen. Wir sind mit dabei, wenn es gilt, Leiharbeit zu begrenzen oder Alternativen durchzusetzen. Wir helfen Betriebsräten, faire Regelungen für ihren Betrieb zu vereinbaren. </p>
                                         <footer>Laura Ipsum, ACME Inc, Münster</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_01.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_01.jpg" />
                                 </li>
                                 <li>
                                     <blockquote>
                                         <p>"Besser-statt-billiger"-Konzepte sind die nachhaltige Alternative zu Entlassungen. Wir zeigen neue Perspektiven auf, z. B. durch den organisierten Austausch mit anderen Betriebsräten. </p>
                                         <footer>Erika M., Tamarisk GmbH, Dortmund</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_02.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_02.jpg" />
                                 </li>
                                 <li>
                                     <blockquote>
                                         <p>Wir organisieren den direkten Dialog von Betriebsräten und Wissenschaftlern, um aufzuzeigen, welche innovativen Strategien zur Entwicklung und Sicherung industrieller Arbeit und Dienstleistung beitragen. Nihil anim keffiyeh helvetica, cred nesciunt sapiente ea proident.</p>
                                         <footer>Noah Ark, Pop AG, Köln</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_03.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_03.jpg" />
                                 </li>
                                 <li>
                                     <blockquote>
                                         <p>"Besser-statt-billiger"-Konzepte sind die nachhaltige Alternative zu Entlassungen. Wir zeigen neue Perspektiven auf, z. B. durch den organisierten Austausch mit anderen Betriebsräten. </p>
                                         <footer>Erika M., Tamarisk GmbH, Dortmund</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_04.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_04.jpg" />
                                 </li>
                                 <li>
                                     <blockquote>
                                         <p>Wir organisieren den direkten Dialog von Betriebsräten und Wissenschaftlern, um aufzuzeigen, welche innovativen Strategien zur Entwicklung und Sicherung industrieller Arbeit und Dienstleistung beitragen. Nihil anim keffiyeh helvetica, cred nesciunt sapiente ea proident.</p>
                                         <footer>Noah Ark, Pop AG, Köln</footer>
                                     </blockquote>
-                                    <img class="stacked" src="Images/slider/img_05.jpg" />
+                                    <img class="stacked" src="images/for_stackslider/img_05.jpg" />
                                 </li>
                             </ul>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
-   <!-- Slider mit Pfeilfe --> 
-    <div class="lightgray-container">
+        </div> 
+    </div> 
+    
+    
+    <!-- THESLIDERS: -->
+    <div class="container2">
         <div class="container">
-            <div class="row">                     
-                    <div class="slider06">
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                    <div class="col-md-7 slider06">
                         <h3>Vorteile für Mitglieder</h3>
                         <div class="flexslider simpleflex">
                             <ul class="slides citations">
@@ -513,39 +457,30 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="special-img">                
-                        <img src="Images/slider/igm_pfeife.png" />
-                    </div>                  
+                
+                    <div class="col-md-5">                
+                        <img src="images/for_stackslider/img_06.jpg" />
+                    </div>
+                  
                 </div>
             </div>
         </div> 
-     <div class="container btn-placehoder">
-      <div class="row">
-        <div>
-        <p class="member-btn-blue">
-          <a href="#" >Jetzt online Mitglied werden</a>
-        </p>
-        <p  class="download-btn">
-          <a href="#">Beitrittsformular herunterladen</a>
-        </p>
-      </div>
-    </div>
-    </div>
-
-
-
-      <!-- Slider mit Ansprechpartnern -->
+    </div> 
+    
+    
+    
+    
+    
+    <!-- THESLIDERS: -->
     <div class="blue-container">
         <div class="container">
             <div class="row">
-                <div class="slider07 bandslider">
+                <div class="col-sm-12 slider07 bandslider">
                     <h3>Ansprechpartner</h3>
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                                <figure>
-                                  <img src="images/slider/p/walter-wadehn.jpg" alt="" />
-                                </figure>
+                                <img src="images/for_stackslider/p/walter-wadehn.jpg" alt="" />
                                 <h3>Walter Wadehn</h3> 
                                 <h4>1. Bevollmächtigter</h4>
                                 
@@ -563,9 +498,7 @@
                                 </p>
                             </li>
                             <li>
-                                <figure>
-                                  <img src="images/slider/p/michael-foest.jpg" alt="" />
-                                </figure>
+                                <img src="images/for_stackslider/p/michael-foest.jpg" alt="" />
                                 <h3>Michael Föst</h3> 
                                 <h4>2. Bevollmächtigter</h4>
                                 
@@ -583,9 +516,7 @@
                                 </p>
                             </li>
                             <li>
-                                <figure>
-                                  <img src="images/slider/p/georg-faigle.jpg" alt="" />
-                                </figure>
+                                <img src="images/for_stackslider/p/georg-faigle.jpg" alt="" />
                                 <h3>Georg Faigle</h3> 
                                 <h4>Gewerkschaftssekretär</h4>
                                 
@@ -603,9 +534,7 @@
                                 </p>
                             </li>
                             <li>
-                                <figure>
-                                  <img src="images/slider/p/Dejan.jpg" alt="" />
-                                </figure>
+                                <img src="images/for_stackslider/p/Dejan.jpg" alt="" />
                                 <h3>Dejan Wick</h3> 
                                 <h4>Jugendsekretär</h4>
                                 
@@ -623,9 +552,7 @@
                                 </p>
                             </li>
                             <li>
-                                <figure>
-                                  <img src="images/slider/p/Karin2012Homepage.JPG" alt="" />
-                                </figure>
+                                <img src="images/for_stackslider/p/Karin2012Homepage.JPG" alt="" />
                                 <h3>Karin Clas</h3> 
                                 <h4>Sachbearbeiterin</h4>
                                 
@@ -647,108 +574,27 @@
                 </div>
             </div>
         </div> 
-    </div>
-
-
-
-
-      <div class="container standalone-hl">
+    </div> 
+    
+    
+    <div class="container">
         <div class="row">
-          <span class="marked">Metall & Elektro</span>
-          <h2>Früher aussteigen und besser aufsteigen</h2>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-          <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium, quidem iusto illum suscipit beatae blanditiis assumenda molestias dolor odio.</strong></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus labore soluta beatae deleniti, accusamus autem culpa quaerat doloremque quo laudantium vel voluptas perspiciatis explicabo temporibus voluptatem illum consectetur adipisci eaque.</p>
-          <h5>Lorem ipsum dolor sit amet.</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates enim ullam praesentium veritatis, et iste voluptas officia, consequatur cumque perferendis quibusdam repudiandae, laborum soluta, minus cupiditate aut repellendus dignissimos eaque laboriosam. Exercitationem, natus eveniet similique nam tenetur illo <a href="#">ipsam</a> nobis laborum veritatis vitae adipisci est, a quidem totam reprehenderit enim!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quas tenetur minima, sequi tempore vel voluptate nobis excepturi expedita esse. Illum necessitatibus ut eum maxime, atque in consectetur quas libero possimus. Sit quos vel distinctio dolor placeat sed illo officia, ratione temporibus! Non saepe illum doloribus error repudiandae suscipit quia, blanditiis debitis ex possimus est, quae assumenda tempora eum in itaque nostrum omnis, obcaecati nobis dolore iure libero. Voluptatum facilis dignissimos, ex a sunt minima veritatis perspiciatis cumque placeat, accusantium error dolore odit, modi fugiat cupiditate porro quisquam itaque sit similique repellendus mollitia illo neque amet. Autem laudantium dicta, nostrum, expedita minus quia architecto nulla reprehenderit ipsam explicabo ducimus voluptate vero voluptatem minima. Minima nam quae voluptas, molestiae enim exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quas tenetur minima, sequi tempore vel voluptate nobis excepturi expedita esse. Illum necessitatibus ut eum maxime, atque in consectetur quas libero possimus. Sit quos vel distinctio dolor placeat sed illo officia, ratione temporibus! Non saepe illum doloribus error repudiandae suscipit quia, blanditiis debitis ex possimus est, quae assumenda tempora eum in itaque nostrum omnis, obcaecati nobis dolore iure libero. Voluptatum facilis dignissimos, ex a sunt minima veritatis perspiciatis cumque placeat, accusantium error dolore odit, modi fugiat cupiditate porro quisquam itaque sit similique repellendus mollitia illo neque amet. Autem laudantium dicta, nostrum, expedita minus quia architecto nulla reprehenderit ipsam explicabo ducimus voluptate vero voluptatem minima. Minima nam quae voluptas, molestiae enim exercitationem.</p>
-
-          </div>
-          <div class="col-sm-6">
-          <img src="Images/slider-dummy.jpg"  alt="dummy">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam labore obcaecati, nulla suscipit quasi odit sint provident earum eveniet fuga eum laboriosam debitis, sapiente natus rem porro est id ipsa error dolores recusandae quaerat, enim ab hic possimus. Provident assumenda similique, commodi alias modi voluptatibus non, dolorem esse aliquam maxime!</p>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae incidunt quia ad id saepe maxime, unde accusamus fuga deserunt officia aspernatur quasi autem perspiciatis exercitationem vero hic suscipit magnam dolore.</blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, distinctio earum, asperiores pariatur nulla voluptatum ullam cumque quia perspiciatis, possimus necessitatibus hic libero minus. Accusantium minus culpa ipsa, similique, ut, minima libero recusandae illum odio repellat unde dolores exercitationem qui architecto autem! Accusantium sapiente in quisquam ex esse! Voluptates, vel.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="tags">
-          <span>Tags</span>
-            <a href="#">Betriebe</a>
-            <a href="#">Streik</a>
-            <a href="#">Tarif 2015</a>
-            <a href="#">lorem</a>
-            <a href="#">Ipsum</a>
-          </div>        
-        </div>
-        <div class="row">
-          <div class="news-footer">
-            <div class="article-nav">
-              <a href="#"><strong>Vorheriger Artikel</strong><br>
-                <span>2,2 Prozent mehr Geld ab dem 1. Mai</span></a>
-            </div>
-            <div class="share">
-              <a href="#"><i class="icon-download_alt"></i> <strong>Downloads zum Thema</strong></a>
-            </div>
-            <div class="share">
-             <a href="javascript:void(0)" id="popover-share" data-placement="top">
-              <i class="icon-share"></i> <strong>Artikel teilen</strong>
-            </a>
-              <div id="popover-share-content" style="display: none">
-                 <div>
-                 <a href="#"><i class='icon-facebook_alt'></i></a>
-                 <a href="#"><i class='icon-twitter_alt'></i></a>
-                 <a href="#"><i class='icon-mail'></i></a>
-                 </div>
-                </div>
-            </div>
-            <div class="article-nav">
-               <a href="#">
-               <strong>Nächster Artikel</strong><br>
-                <span>IG Metall will "Dammbruch" mit aller Macht verhindern</span></a>
-            </div>
-          </div>
-        </div>
-      </div>      
-      <div class="container standalone-hl">
-        <div class="row">
-           <h2>Tarifinfo - <br>Was steht mir zu?</h2>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">         
-          <div class="col-sm-6"> 
-              <p class="text-columns">Der Vorstand in Frankfurt/Main spricht seine Empfehlung am Dienstag, 11. November, aus. Sie richtet sich an alle regionalen Tarifkommissionen der IG Metall, die auf dieser Grundlage die Diskussion in den Betrieben fortsetzen. Am 25. November werden die Tarifkommissionen aller IG Metall-Bezirke ihre Forderungen beschließen. Zwei Tage später, am 27. November, entscheidet abschließend der Vorstand und bestimmt die Forderungen, mit der die IG Metall bundesweit in die Tarifrunde zieht.  
+         <h2 class="col-sm-12">Tarifinfo - <br>Was steht mir zur Verfügung</h2>
+          <div class="col-sm-6">           
+            <div class="text-columns">
+              <p>Der Vorstand in Frankfurt/Main spricht seine Empfehlung am Dienstag, 11. November, aus. Sie richtet sich an alle regionalen Tarifkommissionen der IG Metall, die auf dieser Grundlage die Diskussion in den Betrieben fortsetzen. Am 25. November werden die Tarifkommissionen aller IG Metall-Bezirke ihre Forderungen beschließen. Zwei Tage später, am 27. November, entscheidet abschließend der Vorstand und bestimmt die Forderungen, mit der die IG Metall bundesweit in die Tarifrunde zieht.  
               </p>
+            </div>
             <p>
-              <a class="btn-blue" href="#">Ausführliche Tarifinfos</a>
+              <a class="btn btn-blue btn-md" href="#">Ausführliche Tarifinfos</a>
             </p>
           </div>
-          <div class="col-sm-6">           
-      
-        <div class="accordion-group" id="c23"><div class="panel-heading" data-target="#acc-1" data-toggle="collapse"><div class="csc-header csc-header-n1"><h4 class="csc-firstHeader">Eisen und Stahl </h4></div></div><div class="collapse out" id="acc-1"><div class="panel-body"><div class="csc-textpic-text"><p class="bodytext">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-</p>
-<p class="bodytext"><a class="internal-link btn-link" target="_self" href="index.php?id=50">Tarifinfo Handwerk</a></p></div></div></div></div><div class="csc-default" id="c68"><div class="panel-heading" data-target="#acc-2" data-toggle="collapse"><div class="csc-header csc-header-n2"><h4>Handwerk</h4></div></div><div class="collapse out" id="acc-2"><div class="panel-body"><div class="csc-textpic-text"><p class="bodytext">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-</p>
-<p class="bodytext"><a class="internal-link btn-link" target="_self" href="index.php?id=50">Tarifinfo Handwerk</a></p></div></div></div></div><div class="csc-default" id="c69"><div class="panel-heading" data-target="#acc-3" data-toggle="collapse"><div class="csc-header csc-header-n3"><h4>Holz und Kunststoff </h4></div></div><div class="collapse out" id="acc-3"><div class="panel-body"><div class="csc-textpic-text"><p class="bodytext">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-</p>
-<p class="bodytext"><a class="internal-link btn-link" target="_self" href="index.php?id=50">Tarifinfo Handwerk</a></p></div></div></div></div><div class="csc-default" id="c70"><div class="panel-heading" data-target="#acc-4" data-toggle="collapse"><div class="csc-header csc-header-n4"><h4>Leiharbeit </h4></div></div><div class="collapse out" id="acc-4"><div class="panel-body"><div class="csc-textpic-text"><p class="bodytext">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-</p>
-<p class="bodytext"><a class="internal-link btn-link" target="_self" href="index.php?id=50">Tarifinfo Handwerk</a></p></div></div></div></div>
-      
-      
-   
-      
-
-           <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="col-sm-6">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading01">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true" aria-controls"collapse01">
                       <i class="icon-"></i>Eisen und Stahl
                     </a>
                   </h4>
@@ -763,7 +609,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading02">
                   <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse02">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" aria-controls"collapse02">
                       <i class="icon-"></i>Handwerk
                     </a>
                   </h4>
@@ -777,7 +623,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading03">
                   <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse03">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false" aria-controls"collapse03">
                       <i class="icon-"></i>Holz und Kunststoff
                     </a>
                   </h4>
@@ -791,7 +637,7 @@
                <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading04">
                   <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse04">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse04" aria-expanded="false" aria-controls"collapse04">
                      <i class="icon-"></i>Leiharbeit
                     </a>
                   </h4>
@@ -805,7 +651,7 @@
                <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading05">
                   <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse05">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse05" aria-expanded="false" aria-controls"collapse05">
                       <i class="icon-"></i>Metall und Elektro
                     </a>
                   </h4>
@@ -819,7 +665,7 @@
                <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading06">
                   <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse06">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse06" aria-expanded="false" aria-controls"collapse06">
                       <i class="icon-"></i>Textile Branchen
                     </a>
                   </h4>
@@ -833,7 +679,7 @@
                   <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading07">
                   <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse07">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse07" aria-expanded="false" aria-controls"collapse07">
                       <i class="icon-"></i>Tarifrunde Stahl
                     </a>
                   </h4>
@@ -844,92 +690,40 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
 
         </div>
       </div> <!-- /container -->
-      <div class="container standalone-hl">
-        <div class="row border">
-          <h3>Aktuelles aus Tarifrunde und Stahl</h3>
-        </div>
-      </div>
-      <div class="container three-columns teaser">
+      <div class="container three-columns">
         <div class="row">
+        <h3>Aktuelles aus Tarifrunde und Stahl</h3>
           <div>
           <figure>
-            <img src="Images/dummy1.png" alt="dummy">
+            <img src="images/dummy1.png" alt="dummy">
           </figure>
           <h4>Mehr für Stahlarbeiter: 2,3 plus 1,7 Prozent. Werkverträge, Altersteilzeit und Übernahme neu geregelt</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus reprehenderit aperiam iure fuga totam expedita illum alias excepturi nulla maiores?</p>
           </div>
           <div>
           <figure>
-            <img src="Images/dummy2.png" alt="dummy">
+            <img src="images/dummy2.png" alt="dummy">
           </figure>
           <h4>Mehr für Stahlarbeiter: 2,3 plus 1,7 Prozent. Werkverträge, Altersteilzeit und Übernahme neu geregelt</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa impedit excepturi voluptatibus neque qui a id error quidem eveniet voluptatum!</p>
           </div>
           <div>
           <figure>
-            <img src="Images/dummy3.png" alt="dummy">
+            <img src="images/dummy3.png" alt="dummy">
           </figure>
           <h4>Mehr für Stahlarbeiter: 2,3 plus 1,7 Prozent. Werkverträge, Altersteilzeit und Übernahme neu geregelt</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus beatae pariatur fuga recusandae commodi ab ut sapiente, ipsa, fugit assumenda.</p>
           </div>
         </div>
       </div>
-      <div class="container three-columns tile">
-        <div class="row"> 
-        <figure class="blue-container">
-            Weitere Artikel aus dem Bereich
-            <h2>Metall &amp; Elektro</h2>
-            <a href="#">Archiv Metall &amp; Elektro</a>
-          </figure>          
-          <figure>
-            <img src="Images/kachel1.jpg" alt="kachel">
-            <figcaption>
-                <span class="date">21.09.2014</span>
-                <h3><a href="#">2,2 Prozent mehr Geld ab dem 1. Mai</a></h3>
-            </figcaption>
-          </figure>         
-          <figure>
-            <img src="Images/kachel2.jpg" alt="kachel">
-            <figcaption>
-              <span class="date">21.09.2014</span>
-              <h3><a href="#">2,2 Prozent mehr Geld ab dem 1. Mai</a></h3>
-            </figcaption>
-          </figure>          
-          <figure>
-            <img src="Images/kachel3.jpg" alt="kachel">
-            <figcaption>
-              <span class="date">21.09.2014</span>
-              <h3><a href="#">2,2 Prozent mehr Geld ab dem 1. Mai</a></h3>
-            </figcaption>
-          </figure>  
-           <figure>
-            <img src="Images/kachel4.jpg" alt="kachel">
-            <figcaption>
-              <span class="date">21.09.2014</span>
-              <h3><a href="#">2,2 Prozent mehr Geld ab dem 1. Mai</a></h3>
-            </figcaption>
-          </figure>  
-           <figure>
-            <img src="Images/kachel5.jpg" alt="kachel">
-            <figcaption>
-              <span class="date">21.09.2014</span>
-              <h3><a href="#">2,2 Prozent mehr Geld ab dem 1. Mai</a></h3>
-            </figcaption>
-          </figure>          
-        </div>
-      </div>
-      <div class="container">
-        <div class="row text-center"><a href="#" class="btn btn-trans btn-md">Weitere Artikel anzeigen</a></div>
-      </div>     
       <div class="two-columns container">
         <div class="row">
-            <iframe width="560" height="315" src="http://www.youtube.com/embed/AiLRy4imt4g?controls=0&autohide=0&showinfo=0" frameborder="0" allowfullscreen>
-            </iframe>         
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/AiLRy4imt4g" frameborder="0" allowfullscreen></iframe>         
           <div>
           <ul class="link-path">
             <li>            
@@ -960,187 +754,53 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis reprehenderit ducimus esse. Consequuntur cumque voluptate dolor illum? Inventore itaque enim modi, laboriosam ratione rem iste facilis molestiae est in, praesentium esse consequatur earum aliquid dolorem, nemo provident? Accusamus neque distinctio perferendis. Blanditiis odit temporibus dolores deleniti ratione hic. Laboriosam, atque.</p>
           </div>
           <form role="form">
-            <div class="form-group row">
-              <label for="gender" class="select-label">Anrede</label> 
-             <div class="select-box"> 
-              <i class="icon-arrow_up"></i>  
-                 <select id="gender">
-                    <option>Herr</option>
-                    <option>Frau</option>
-                 </select>
+        <dl class="select-menu">
+           <dt><a href="#">Anrede <span><i class="icon-arrow_up"></i></span></a></dt>
+             <dd>
+                 <ul>
+                     <li><a href="#" data-toggle="tab"><i class="icon-arrow_up"></i> Frau</a></li>
+                     <li><a href="#" data-toggle="tab"><i class="icon-arrow_up"></i> Herr</a></li>                     
+                 </ul>
+             </dd>
+         </dl>
+          <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="vorname">Vorname</label>
+                <input type="text" class="form-control" id="vorname" placeholder="Vorname">
               </div>
-              </div>
-            <div class="form-group row">
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="vorname" placeholder="Vorname">
+              <div class="col-sm-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
                 </div>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="name" placeholder="Name">
-                  </div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="beispielFeldEmail1" placeholder="Email-Adresse">
-              </div>
-              
-              <div class="checkbox">
-                <label for="check"><i class="icon-"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eum?</label>
-                <input type="checkbox" id="check">              
-              </div>
-              <button type="submit" class="btn-blue">Informiert bleiben</button>
-          </form>       
-        </div>
-      </div>
-      <div class="two-columns container">
-        <div class="row">
-          <div>
-            <h2>Kontakt Lorem ipsum dolor sit amet.</h2>
-          </div>
-          <div></div>
-        </div>
-      </div>
-      <div class="two-columns container">
-        <div class="row">                  
-          <div> 
-            <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis reprehenderit ducimus esse. Consequuntur cumque voluptate dolor illum? </strong></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis reprehenderit ducimus esse. Consequuntur cumque voluptate dolor illum? Inventore itaque enim modi, laboriosam ratione rem iste facilis molestiae est in, praesentium esse consequatur earum aliquid dolorem, nemo provident? Accusamus neque distinctio perferendis. Blanditiis odit temporibus dolores deleniti ratione hic. Laboriosam, atque.</p>
-            <p>
-              <strong>IG Metall Bezirksleitung</strong> <br>
-              <strong>Nordrhein-Westfalen</strong><br>
-              Roßstraße 94<br>
-              40476 Düsseldorf
-            </p>
-            <p>
-              Telefon: 0211 - 45484-0<br>
-              Fax: 0211 - 45484 - 101<br>
-              <a href="mailto:bezirk.nrw@igmetall.de">E-MAil: bezirk.nrw@igmetall.de</a>
-            </p>
-          </div>
-             <form role="form">
-            <div class="form-group row">
-              <label for="gender" class="select-label">Anrede</label> 
-             <div class="select-box"> 
-              <i class="icon-arrow_up"></i>  
-                 <select id="gender">
-                    <option>Herr</option>
-                    <option>Frau</option>
-                 </select>
-              </div>
-              </div>
-            <div class="form-group row">
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="vorname" placeholder="Vorname*" required title="Bitte füllen Sie dieses Feld aus">
-                </div>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="name" placeholder="Name*" required title="Bitte füllen Sie dieses Feld aus">
-                  </div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="beispielFeldEmail1" placeholder="Email-Adresse*"  required title="Bitte geben Sie eine gültige Email Adresse an">
-              </div>
-              <textarea class="form-control" rows="3"  placeholder="Mitteilung*" required></textarea>
-              <button type="submit" class="btn-blue">Absenden</button>
+            </div>
+            <div class="form-group">
+              <label for="beispielFeldEmail1">Email-Adresse</label>
+              <input type="email" class="form-control" id="beispielFeldEmail1" placeholder="Email-Adresse">
+            </div>
+            
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eum?
+              </label>
+            </div>
+            <button type="submit" class="btn btn-blue btn-md">Informiert bleiben</button>
           </form>
         </div>
       </div>
-      <div class="container">
-      <div class="row">
-        <div class="container standalone-hl">
-          <div class="row">
-            <h2>Suchbegriff</h2>
-          </div>
-        </div>
-        <div class="result-list">
-              <div>
-              <div class="tags-search">
-               <span>24.11.2014</span>
-                 <a href="#">Betriebe</a>
-                 <a href="#">Streik</a>
-                 <a href="#">Tarif 2015</a>
-                 <a href="#">lorem</a>
-                 <a href="#">Ipsum</a>
-             </div>
-             <h4>Metaller und Metallerinnen - aktiv in Betrieb und Gesellschaft</h4>
-             <figure><img src="Images/dummy3.png" alt="dummy"></figure>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ex, consequuntur possimus magnam nam quis, exercitationem, mollitia at ratione officiis eius! Optio sint, molestias ipsam mollitia! Provident facilis iure pariatur distinctio aspernatur rerum doloremque autem. Et non, harum est, quasi dignissimos eius voluptatem placeat laboriosam beatae expedita, voluptatum sit veritatis.           
-             </p>
-             <p><a href="#" class="download">PDF, 12 MB</a></p>
-             </div>
-             <div>
-             <div class="tags-search">
-               <span>24.11.2014</span>
-                 <a href="#">Betriebe</a>
-                 <a href="#">Streik</a>
-                 <a href="#">Tarif 2015</a>
-                 <a href="#">lorem</a>
-                 <a href="#">Ipsum</a>
-             </div>
-             <h4>Metaller und Metallerinnen - aktiv in Betrieb und Gesellschaft</h4>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ex, consequuntur possimus magnam nam quis, exercitationem, mollitia at ratione officiis eius! Optio sint, molestias ipsam mollitia! Provident facilis iure pariatur distinctio aspernatur rerum doloremque autem. Et non, harum est, quasi dignissimos eius voluptatem placeat laboriosam beatae expedita, voluptatum sit veritatis.           
-             </p>
-             <p><a href="#" class="download">PDF, 12 MB</a></p>
-          </div>
-          <div>
-          <div class="tags-search">
-              <span>24.11.2014</span>
-                <a href="#">Betriebe</a>
-                <a href="#">Streik</a>
-                <a href="#">Tarif 2015</a>
-                <a href="#">lorem</a>
-                <a href="#">Ipsum</a>
-            </div>
-          <h4>Metaller und Metallerinnen - aktiv in Betrieb und Gesellschaft</h4>
-          <figure><img src="Images/dummy3.png" alt="dummy"></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quisquam voluptas doloribus, mollitia? Repellendus possimus tenetur, excepturi explicabo, facilis esse.            
-            </p>
-            <p><a href="#" class="internal-link">Zum Artikel</a></p>
-            </div>
-            <div>
-            <div class="tags-search">
-              <span>24.11.2014</span>
-                <a href="#">Betriebe</a>
-                <a href="#">Streik</a>
-                <a href="#">Tarif 2015</a>
-                <a href="#">lorem</a>
-                <a href="#">Ipsum</a>
-            </div>
-          <h4>Metaller und Metallerinnen - aktiv in Betrieb und Gesellschaft</h4>
-          <figure><img src="Images/dummy2.png" alt="dummy"></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quisquam voluptas doloribus, mollitia? Repellendus possimus tenetur, excepturi explicabo, facilis esse.            
-            </p>
-            <p><a href="#" class="internal-link">DOC, 480 KB</a></p>
-      </div>
-      </div>
-        <div class="filter">
-          <h3>Suche anpassen</h3>
-          <div class="blue-container">
-            <h4>Suchbegriff ändern</h4>
-              <form role="form">                  
-                    <input type="text" class="form-control  search">
-                    <button class="btn-trans" type="button">Suche</button>
-              </form>
-
-            <h4>Zeitraum</h4>
-            <h4>Themen</h4>
-            <h4></h4>
-          </div>
-        </div>
-      </div>
-      </div>
-      
         <div class="four-columns container">
         <div class="row">
         <h2 class="border-line">Aktuelle Kampagnen</h2>
            <figure>
-             <img src="Images/fuer-alle.png" alt="slider dummy">
+             <img src="images/fuer-alle.png" alt="slider dummy">
            </figure>
            <figure>
-             <img src="Images/logo_mitglieder.png" alt="slider dummy">
+             <img src="images/logo_mitglieder.png" alt="slider dummy">
            </figure>
            <figure>
-             <img src="Images/arbeit-sicherheit.jpg" alt="slider dummy">
+             <img src="images/arbeit-sicherheit.jpg" alt="slider dummy">
            </figure>
            <figure>
-             <img src="Images/bildung-macht.jpg" alt="slider dummy">
+             <img src="images/bildung-macht.jpg" alt="slider dummy">
            </figure>           
         </div>
       </div>
@@ -1227,9 +887,13 @@
       </div> <!-- / grauer container -->
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/igm.js"></script>  
-     <script src="js/flexslider/jquery.flexslider-min.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="js/igm.js"></script>
+    <script src="js/select.js"></script>  
+    
+    <!-- THESLIDERS: -->
+    <script src="js/flexslider/jquery.flexslider-min.js"></script>
     <script src="js/stackslider/stackslider.js"></script>
+
   </body>
 </html>
