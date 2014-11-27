@@ -46,6 +46,7 @@ img.out{
 .topslider{
     position:relative;
     overflow:hidden;
+    margin-bottom: 70px;
 }
 .topslider .display img{
     height:100%;
@@ -54,12 +55,12 @@ img.out{
 .topslider .preview{
     position:absolute;
     z-index: 8;
-    right:10px;
+    right:0;
     bottom:0;
     width:860px;
     height:520px;
     padding:110px 80px 140px 280px;
-    background:url('../images/trapezoid.png') no-repeat right bottom;
+    background:url('../Images/trapezoid.png') no-repeat right bottom;
     color:#fff;
 }
 .topslider .preview a,
@@ -115,8 +116,8 @@ img.out{
     height:100px;
     position:absolute;
     z-index: 9;
-    left:10px;
-    right:10px;
+    left:0;
+    right:0;
     bottom:60px;
 }
 .topslider #scrolldown{
@@ -152,8 +153,8 @@ img.out{
     margin-left:5px;
 }
 .topslider .carousel .filter span:before{
-    font-family: "flexslider-icon"; 
-    content: '\f002'; 
+    font-family: "IGM_NRW"; 
+     content: '\e601'; 
     margin-right:5px;
 }
 
@@ -234,15 +235,14 @@ img.out{
     top:30px;
     list-style-type: none;
     width: 95%;
-    border-bottom: 1px solid @white;
+    border-bottom: 1px solid @white;    
 }
 .slider02 .flex-control-nav li{
     float:left;
-    .font-size(18);
+    .font-size(24);
 }
 .slider02 .flex-control-nav a{
     display:none;
-    font-size:1.8em;
     color:@white;
 }
 .slider02 .flex-control-nav a:hover{
@@ -260,10 +260,11 @@ img.out{
 }
 .slider02 .flex-direction-nav li{
     float:left;
-    height:28px;
+    height:25px;
     width: 30px;
     overflow:hidden;
     text-align:center;
+    margin-top: 5px;
 }
 .slider02 .flex-direction-nav a{
     color:@white;
@@ -275,7 +276,7 @@ img.out{
 }
 .flex-direction-nav a:before  { 
     font-family: "IGM_NRW"; 
-        font-size: 28px; 
+        font-size: 22px; 
         line-height:1; 
         display: block; 
         content: '\e600'; 

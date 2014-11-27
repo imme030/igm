@@ -1,11 +1,13 @@
 // Beispiel hintergrund
 .header-modul.bsp2 {background-image: url("../Images/header-dummy2.jpg");}
+.header-modul.headerimage {max-height: 450px; min-height: 450px; background-image: url("../Images/header-dummy3.jpg");}
 .header-modul {	
 	min-height: 60em;
 	background-image: url("../Images/header-dummy.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;	
+	margin-bottom: 40px;
 	.part1 {
 		.row > div {
 			margin-left: @grid-gutter-width/2;
@@ -44,7 +46,7 @@
 			margin-right: 0;
 			a {color: @white;}
 		}
-		.row > p {
+		.row p {
 			color: @white;				
 			a {
 				.font-size(18);
