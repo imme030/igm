@@ -6,15 +6,18 @@
 .btn-sm {
 	padding:  @grid-gutter-width/4 @grid-gutter-width/2;
 	.font-size(14);
+	.border-radius(0);
 }
 .btn-md {
 	padding:  @grid-gutter-width/2 @grid-gutter-width;
 	.font-size(18);
 }
-.btn-trans {	
-.btn-md;	
+.btn-trans {
+	.btn;	
+	.btn-md;	
 	border: 1px solid @gray;
 	color: @text-color;
+	background-color: transparent;
 }
 .btn-blue {
 	.btn;
@@ -45,6 +48,18 @@
 			float: left;
 			margin: -15px 15px 0 0;
 		}
+	}
+}
+// Suchergebnis
+.filter-btn, .filter-btn:hover, .filter-btn:focus {
+	.font-size(14);
+	color: @gray-medium;
+	padding: 2px 10px;
+	border: 1px solid @gray-medium;
+	&.active {
+		border-color: @brand-blue;
+		background-color: @brand-blue;
+		color: @white;
 	}
 }
 .facebook-btn a:before{ content: "\e609";}
