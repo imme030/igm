@@ -61,11 +61,11 @@ img.out{
     height:520px;
     padding:110px 80px 140px 280px;
     background:url('../Images/trapezoid.png') no-repeat right bottom;
-    color:#fff;
+    color:@white;
 }
 .topslider .preview a,
 .topslider .preview h4{
-    color:#fff;
+    color:@white;
 }
 .topslider .preview img{
     display:none;
@@ -82,14 +82,14 @@ img.out{
     margin:0;
     font-size: 14px;
     overflow: hidden;
-    border:1px solid #fff;
+    border:1px solid @white;
     border-width:1px 0;
 }
 .topslider .preview header li{
     float:left;
-    color:#fff;
+    color:@white;
     padding:0 0.5em 0 0;
-    /*border-left:1px solid #fff;*/
+    /*border-left:1px solid @white;*/
 }
 .topslider .preview header li:after{
     content: ' |';
@@ -105,12 +105,11 @@ img.out{
     right:0;
 }
 .topslider .preview header a:before{
-    font-family: "IGM_NRW";
-    content: '\e601';      
+    .arrow-right-i;      
      margin-right:0.8em;
 }
 .topslider .carousel{
-    background:#fff;
+    background:@white;
     -webkit-box-shadow:inset 0 0 10px 0 #555555;
     box-shadow:inset 0 0 10px 0 #555555;
     height:100px;
@@ -135,16 +134,15 @@ img.out{
     cursor:pointer;
 }
 .topslider #scrolldown:before{
-    font-family: "IGM_NRW";
-    color:#fff;
-     content: '\e602'; 
+   .arrow-up-i;
+    color:@white;
 }
 
 .topslider .carousel .filter{
     position:absolute;
     bottom:100%;
     left:110px;
-    color:#fff;
+    color:@white;
     border-left:1px solid #eee;
     padding:3px 8px 13px;
     font-size:1.2em;
@@ -153,8 +151,7 @@ img.out{
     margin-left:5px;
 }
 .topslider .carousel .filter span:before{
-    font-family: "IGM_NRW"; 
-     content: '\e601'; 
+    .arrow-right-i; 
     margin-right:5px;
 }
 
@@ -172,8 +169,8 @@ img.out{
     cursor: pointer;
 }
 .topslider .carousel li.flex-active-slide{
-    border-color:#fff;
-    background: #fff;
+    border-color:@white;
+    background: @white;
     -webkit-box-shadow: 0 0 10px 0 #000000;
     box-shadow: 0 0 10px 0 #000000;
 }
@@ -275,14 +272,13 @@ img.out{
     color:@brand-red;
 }
 .flex-direction-nav a:before  { 
-    font-family: "IGM_NRW"; 
+    .arrow-left-i;
         font-size: 22px; 
         line-height:1; 
-        display: block; 
-        content: '\e600'; 
+        display: block;
 }
 .flex-direction-nav a.flex-next:before  { 
-    content: '\e601'; 
+    .arrow-right-i; 
 }
 .slider02 .imgstack img { 
 	top: 40px;
@@ -340,7 +336,7 @@ img.out{
 }
 .slider03 blockquote footer{
     margin-left:100px;
-    color:#3c3c3c;
+    color:@gray;
     font-size:0.6em;
     font-style: normal;
 }
@@ -367,12 +363,12 @@ img.out{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    border:1px solid #999;
+    border:1px solid @gray-medium;
     background: @white;
     cursor:pointer;
 }
 .slider03 .flex-control-paging a.flex-active{
-    background: #999;
+    background: @gray-medium;
 }
 
 
@@ -402,7 +398,7 @@ img.out{
     display:none;
 }
 .slider04 blockquote footer{
-    color:#3c3c3c;
+    color:@gray;
     font-size:0.6em;
     font-style: normal;
 }
@@ -429,12 +425,12 @@ img.out{
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    border:1px solid #999;
+    border:1px solid @gray-medium;
     background: @white;
     cursor:pointer;
 }
 .slider04 .flex-control-paging a.flex-active{
-    background: #999;
+    background: @gray-medium;
 }
 
 /*- - - - - - - -  slider06*/
@@ -464,7 +460,7 @@ img.out{
             overflow:hidden;
             text-align:center;
             a{
-                color:#3c3c3c;
+                color:@gray;
                 text-decoration: none !important;
                 &:hover{
                     text-decoration: none;
@@ -507,7 +503,7 @@ img.out{
     text-align:center;
 }
 .slider07 .flex-direction-nav a{
-    color:#fff;
+    color:@white;
     text-decoration: none !important;
         font-size: 28px; 
 }
@@ -537,7 +533,7 @@ img.out{
 }
 .slider07 .slides h4{
     font-size: 1.1em;
-    color:#fff;
+    color:@white;
     font-weight: 400;
     border-bottom:1px solid #9cd;
     margin-bottom:15px;
@@ -566,7 +562,7 @@ img.out{
     }
     h3{
         margin: 0;
-        border-bottom:1px solid #666;
+        border-bottom:1px solid @gray-medium;
         padding-bottom: 10px;
     }
     .flex-control-paging{
@@ -580,23 +576,23 @@ img.out{
         margin-right:5px;
     }
     .flex-control-paging a {
-        text-indent: -999px;
+        text-indent: -9999px;
         display: block;
         width: 15px;
         height: 15px;
         border-radius: 10px;
-        border: 1px solid #fff;
+        border: 1px solid @white;
         background: transparent;
         cursor: pointer;
     }
     .flex-control-paging a.flex-active {
-        background: #fff;
+        background: @white;
     }
     .flex-direction-nav {
         list-style-type: none;
     }
     .flex-direction-nav a{
-        color:#fff;
+        color:@white;
         text-decoration: none !important;
         position:absolute;
         right:10px;
