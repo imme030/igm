@@ -40,12 +40,6 @@ $(function(){
                 }
             }
         },
-        simpleflex: {
-            animation: "slide",
-            controlNav: false,
-            animationLoop: true,
-            slideshow: false
-        },
         carousel: {
             animation: "slide",
             controlNav: false,
@@ -143,8 +137,12 @@ $(function(){
     $('.bandslider').each(function(i,p){ 
         $(p).find('.flexslider').flexslider(flexoptions.carousel);
     });
-    // initialize caroussels.
+    // initialize all other sliders. (class '.simpleflex' needs to be set in markup)
     $('.simpleflex').each(function(i,p){ 
-        $(p).flexslider(flexoptions.simpleflex);
+        $(p).flexslider({
+            animation: "slide",
+            animationLoop: true,
+            slideshow: false
+        });
     });
 });
