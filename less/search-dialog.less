@@ -21,11 +21,21 @@
 	  	height: 85px;
 	  	border:0;
 	  	.border-radius(0);
-	  	.font-size(55);
+	  	.font-size(25);
 	  	margin-bottom: 35px;
 	  	text-transform: uppercase;
 	  	background-color: transparent;
 	  	&:focus {.box-shadow(0 0 0);}
 	  }
 	}
+}
+@media (max-width: 720px) {
+	.modal-dialog .modal-content {  
+		width: 98%; 
+		input { text-align: center;}
+	}
+}
+@media (min-width: 450px)and(max-width: 720px) {.modal-dialog .modal-content input {.font-size(35);}}
+@media (min-width: 730px) {
+	.modal-dialog .modal-content input {.font-size(55);}
 }

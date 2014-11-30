@@ -27,7 +27,7 @@
 	padding-top: 20px;
 	a {color:  @black;}
 		&.share {			
-			.make-sm-column(2);
+			.make-sm-column(2);			
 		}
 		&.article-nav {			
 			.make-sm-column(4);
@@ -58,4 +58,9 @@
 			  &.top {margin-top: -22px;}
 			}
 	}
+}
+@media (max-width: @screen-xs-max){
+	.news-footer {
+		 div.share {line-height: 50px;	}
+		}
 }

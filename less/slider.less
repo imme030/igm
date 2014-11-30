@@ -504,6 +504,9 @@ color:@brand-red;
         margin:30px 0;
     }
 }
+.special-img {
+    .make-sm-column(6);
+}
 
 /*                        - - - - - - - -  slider07*/
 .slider07 {
@@ -571,16 +574,6 @@ color:@brand-red;
 .slider07 .slides p{
     font-size: 0.9em;font-weight: 400;
 }
-.special-img {
-    .make-sm-column(6);
-    img {
-        position: absolute;
-        margin-top: 72px;
-        
-        }
-}
-
-
 
 /*   
                      - - - - - - - -  slider08*/
@@ -648,13 +641,14 @@ color:@brand-red;
 /* Media Queries
 ***********************/
 @media (max-width: 380px){
-    .stackslider .imgstack{  height: 250px; }  
+    .stackslider .imgstack{  height: 250px; } 
+    .slider04 .imgstack {margin-left: 10px;}   
 }
 @media (min-width: 380px){
     .stackslider .imgstack{ height: 400px;  }  
 }
 @media (min-width: 500px){
-    .stackslider .imgstack{ height: 700px;  }  
+    .stackslider .imgstack{ height: 700px;  } 
 }
 @media (min-width: @screen-sm){
     .stackslider .imgstack{ height: auto;  }  
@@ -666,4 +660,29 @@ color:@brand-red;
   .slider02 .imgstack {
       margin-left: 40px;
     }  
+    .special-img 
+    img {
+        position: absolute;
+        margin-top: 72px;        
+        }
+}
+@media (max-width: @screen-xs-max){
+    .stackslider .flexslider {overflow: visible; padding-bottom: 0;}
+    .slider03 {
+        position: relative;
+        .imgstack {
+          position: relative;
+          left: 15px;
+          height: 150px;
+          bottom: auto;
+        }
+        .flex-control-paging {
+          left: 15px;
+          bottom: 50px;
+        }
+        blockquote footer {
+          margin-left: 0;
+        }
+        &:before {left: 15px;}
+    }
 }
