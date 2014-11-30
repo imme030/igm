@@ -193,7 +193,7 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="../navbar/"><i class="icon-search"></i></a></li>
+              <li><a href="#" data-toggle="modal" data-target="#search-dialog"><i class="icon-search"></i></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
     </div>
@@ -1403,7 +1403,24 @@
           </div>
         </div> <!-- /container -->
       </div> <!-- / grauer container -->
-   
+<!-- Modal -->
+<div class="modal fade" id="search-dialog" tabindex="-1" role="dialog" aria-labelledby="Suchdialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <button type="button" class="close" data-dismiss="modal">
+          <i aria-hidden="true" class="icon-close"></i>
+          <span class="sr-only">Schließen</span>
+        </button>
+    <div class="modal-content">        
+      <form role="form" class="modal-body">
+              <div class="form-group">
+                <label class="sr-only" for="search-dialog-text">Suchbegriff eigeben</label>
+                <input type="text" class="form-control" id="search-dialog-text" placeholder="Suchbegriff eingeben ...">
+                <button class="btn-trans" type="button">Suchen</button>
+              </div>              
+        </form>
+      </div>
+    </div>
+  </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
     <script src="js/bootstrap.min.js"></script>
     <script src="js/igm.js"></script>  
