@@ -12,19 +12,19 @@
 	padding:  @grid-gutter-width/2 @grid-gutter-width;
 	.font-size(18);
 }
-.btn-trans {
+.btn-trans a{
 	.btn;	
 	.btn-md;	
 	border: 1px solid @gray;
 	color: @text-color;
 	background-color: transparent;
 }
-.btn-blue {
+.btn-blue a{
 	.btn;
 	.btn-md;
 	background-color: @brand-blue;
 	color: @white;
-	&:hover, &:focus{color: @white;}
+	&:hover , &:focus{color: @white;}
 }
 .container.btn-placehoder {
 	min-height: 166px;
@@ -74,6 +74,10 @@
 	a {color: @white;}
 }
 a.btn-link, a.btn-link:hover, a.btn-link:focus{		
+	.btn;
+	.btn-trans;
+	}
+.btn-link a, .btn-link:hover a, .btn-link:focus a{		
 	.btn;
 	.btn-trans;
 	}
