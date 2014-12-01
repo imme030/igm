@@ -11,20 +11,19 @@
 		color: @white;
 		.font-size(18);
 		&:before {
-			font-family: 'IGM_NRW';
-			content: "\e612";
+			.plus-i;
 			margin-right: 15px;
 		}
 		&:focus {
 			background-color: @brand-red;
 			color: @white;
 			text-decoration: none;
-			&:before {content: "\e60e";}
+			&:before {.minus-i;}
 		}			
 	}
 }
 .active .panel-heading {
-	h4:before {content: "\e60e";}
+	h4:before {.plus-i;}
 }
 .panel-body {
 	padding: 15px;

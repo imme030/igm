@@ -41,8 +41,13 @@
   }
 .checkbox {
   input { left: -9999px; position: absolute;}
-  i {margin-right: 15px;}
-  i:before {content: "\e612";}
-  label.active  { i:before {content: "\e60e";} }      
+  i {margin-right: 15px; .font-size(18);}
+  i:before {.switch-off-i;}
+  label{
+    padding-left: 0;
+  &.active  { 
+    i:before {.switch-on-i;} 
+  }   
+  }   
 }
 textarea {width: 100%; margin-bottom: @input-margin;}

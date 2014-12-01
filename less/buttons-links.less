@@ -36,17 +36,17 @@
 	border: 1px solid @gray;
 	width: 300px;
 	margin-right: 45px;
-	padding: 10px 20px 0 10px;
+	padding: 20px 20px 10px 10px;
 	a {
 		text-align: left;
 		.font-size(18);
 		color: @text-color;
+		text-transform: uppercase;
 		&:before {
-			font-family: 'IGM_NRW';
 			.font-size(60);
 			white-space: normal;
 			float: left;
-			margin: -15px 15px 0 0;
+			margin: -10px 15px 0 0;
 		}
 	}
 }
@@ -62,11 +62,11 @@
 		color: @white;
 	}
 }
-.facebook-btn a:before{ content: "\e609";}
-.twitter-btn a:before{ content: "\e618";}
-.youtube-btn a:before{ content: "\e619";}
-.download-btn  a:before {content: "\e605";}
-.member-btn  a:before, .member-btn-blue a:before {content: "\e60f";}
+.facebook-btn a:before{ .facebook-i}
+.twitter-btn a:before{ .twitter-i}
+.youtube-btn a:before{ .youtube-i;}
+.download-btn  a:before {.download-i;}
+.member-btn  a:before, .member-btn-blue a:before {.member-i;}
 .member-btn-blue {
 	color: @white; 
 	background-color: @brand-blue;
