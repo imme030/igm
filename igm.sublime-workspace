@@ -99,7 +99,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 57335,
+				"buffer_size": 84663,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +107,7 @@
 			"file": "css/igm.css",
 			"settings":
 			{
-				"buffer_size": 118715,
+				"buffer_size": 185949,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,7 +115,7 @@
 			"file": "less/variablen-theme.less",
 			"settings":
 			{
-				"buffer_size": 2528,
+				"buffer_size": 2709,
 				"line_ending": "Windows"
 			}
 		},
@@ -123,7 +123,7 @@
 			"file": "less/type.less",
 			"settings":
 			{
-				"buffer_size": 1062,
+				"buffer_size": 1099,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +131,7 @@
 			"file": "less/partials-tile-imgages.less",
 			"settings":
 			{
-				"buffer_size": 1124,
+				"buffer_size": 1314,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "less/igm.less",
 			"settings":
 			{
-				"buffer_size": 3138,
+				"buffer_size": 3211,
 				"line_ending": "Windows"
 			}
 		}
@@ -493,7 +493,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 57335,
+						"buffer_size": 84663,
 						"regions":
 						{
 						},
@@ -524,7 +524,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 118715,
+						"buffer_size": 185949,
 						"regions":
 						{
 						},
@@ -553,7 +553,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2528,
+						"buffer_size": 2709,
 						"regions":
 						{
 						},
@@ -582,7 +582,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1062,
+						"buffer_size": 1099,
 						"regions":
 						{
 						},
@@ -611,15 +611,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1124,
+						"buffer_size": 1314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								309
+								0,
+								0
 							]
 						],
 						"settings":
@@ -641,7 +641,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3138,
+						"buffer_size": 3211,
 						"regions":
 						{
 						},
