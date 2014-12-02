@@ -1,6 +1,7 @@
 .header-mainnav {
    &.affix .navbar-collapse li.dropdown.open > a:after{ margin-top: -12px;}
   .navbar-collapse {
+      li.dropdown > a.active, li > a.active  {  border-top: 4px solid @brand-red;}
       li.dropdown { 
         list-style: none;
        position: static; 
@@ -71,7 +72,7 @@
 .header-mainnav .navbar-collapse li.dropdown.dropdown-submenu.open > a:after{background: none;}
 .header-mainnav .dropdown.open .dropdown-menu div.part .dropdown-submenu{
   &.open a {
-  .icon-arrow_right:before{content: "\e602";}
+  .icon-arrow_right:before{.arrow-down-i; .font-size(9);}
   }
    a {    
         .icon-arrow_right {

@@ -60,7 +60,7 @@ img.out{
     width:860px;
     height:520px;
     padding:110px 80px 140px 280px;
-    background:url('../Images/trapezoid.png') no-repeat right bottom;
+    //background:url('../Images/trapezoid.png') no-repeat right bottom;
     color:@white;
 }
 .topslider .preview a,
@@ -138,7 +138,7 @@ img.out{
     color:@white;
 }
 
-.topslider .carousel .filter{
+.topslider .carousel .filter {
     position:absolute;
     bottom:100%;
     left:110px;
@@ -146,6 +146,7 @@ img.out{
     border-left:1px solid #eee;
     padding:3px 8px 13px;
     font-size:1.2em;
+    a {display: inline-block; color: @white;}
 }
 .topslider .carousel .filter span{
     margin-left:5px;
@@ -654,7 +655,8 @@ color:@brand-red;
     .stackslider .imgstack{ height: auto;  }  
   .slider02 .imgstack {
       margin-left: 0;
-    }  
+    }
+    .topslider .preview{  background:url('../Images/trapezoid.png') no-repeat right bottom;}  
 }
 @media (min-width: @screen-md){
   .slider02 .imgstack {
@@ -667,6 +669,7 @@ color:@brand-red;
         }
 }
 @media (max-width: @screen-xs-max){
+    .topslider .preview{  background:url('../Images/trapezoid-mobil.png') no-repeat right bottom;}
     .stackslider .flexslider {overflow: visible; padding-bottom: 0;}
     .slider03 {
         position: relative;
