@@ -267,19 +267,22 @@ img.out{
 .slider02 .flex-direction-nav a{
     color:@white;
     text-decoration: none !important;
-}
-.slider02 .flex-direction-nav a:hover{
-    text-decoration: none;
-    color:@brand-red;
+    color: @brand-blue;
 }
 .flex-direction-nav a:before  { 
     .arrow-left-i;
+    color: @white;
         font-size: 22px; 
         line-height:1; 
         display: block;
+        width: 50px;
 }
 .flex-direction-nav a.flex-next:before  { 
     .arrow-right-i; 
+    color: @white;
+}
+.flex-direction-nav a:hover:before  { 
+    color:@brand-red;
 }
 .slider02 .imgstack img { 
 	top: 40px;
@@ -490,13 +493,17 @@ color:@brand-red;
             margin-bottom: 25px;
             text-align:center;
             a{
-                color:@gray;
-                text-decoration: none !important;
-                &:hover{
-                    text-decoration: none;
-                    color:@brand-red;
+                color: @gray-light;
+                text-decoration: none !important;                                
+                &:before, a:after {
+                    .font-size(24); 
+                    color:@gray;                    
                 }
-                &:before, a:after {.font-size(24);}
+                &:hover{
+                     &:before, a:after {
+                    color:@brand-red;
+                    }
+                }
             }
         }
     }     
@@ -536,13 +543,11 @@ color:@brand-red;
     text-align:center;
 }
 .slider07 .flex-direction-nav a{
-    color:@white;
-    text-decoration: none !important;
-        font-size: 28px; 
+    color:@brand-blue;
+     &:before, a:after {.font-size(24); color: @white;} 
 }
 .slider07 .flex-direction-nav a:hover{
-    text-decoration: none;
-    color:@brand-red;
+    &:before, a:after { color:@brand-red;}
 }
 
 .slider07 .slides{
