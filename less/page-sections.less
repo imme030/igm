@@ -15,8 +15,7 @@
 		}
 		padding-top: 260px;
 		h1, h2 {
-		color: @white;
-		width: 70%;
+		color: @white;		
 		&.brand-text {padding: 5px 10px;}
 		}
 		h2 {font-weight: normal; .font-size(35);}
@@ -34,8 +33,18 @@
 		}
 	}
 	.part3 {
-		.row p.facebook-btn, .row p.twitter-btn, .row p.youtube-btn, .row h2{			
+		.row h2 {
+			.make-xs-column(12);
+			.make-sm-column(3);	
+			.font-size(25);
+			margin-top: 0;
+		}
+		.row p.facebook-btn, .row p.twitter-btn, .row p.youtube-btn{
+			.make-xs-column(4);
 			.make-sm-column(3);
+		}
+		
+		.row p.facebook-btn, .row p.twitter-btn, .row p.youtube-btn, .row h2{
 			color: @white;
 			line-height: 64px;
 			font-weight: 600;
@@ -66,14 +75,18 @@
 }
 @media (min-width: @screen-md-min) {
 	.header-modul  {
-		.part3 .row p{
-			&.facebook-btn, &.twitter-btn, &.youtube-btn {
-				a {
-					.font-size(20);				
+		.part1 h1, h2 {width: 70%;}
+		.part3 .row {
+			h2 {.font-size(32);}
+			p{
+				&.facebook-btn, &.twitter-btn, &.youtube-btn {
+					a {
+						.font-size(20);				
+					}
 				}
-			}
-			&.member-btn, &.download-btn{
-				.make-sm-column-offset(2);
+				&.member-btn, &.download-btn{
+					.make-sm-column-offset(2);
+				}
 			}
 		}
 	}	
