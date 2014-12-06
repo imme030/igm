@@ -56,7 +56,8 @@
 			.font-size(16);
 			font-weight: 600;
 			vertical-align: top;
-			display: inline-block;		
+			display: inline-block;	
+			margin-right: 10px;	
 		}
 	}
 	.f3-widget-paginator {
@@ -68,6 +69,8 @@
 			.font-size(18);		
 			&.previous, &.next, &:nth-child(2) {
 				&:before {content: " ";}
+			}
+			&.previous, &.next {
 				a {
 					.font-size(3);
 				color: @white;
