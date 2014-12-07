@@ -1138,7 +1138,7 @@
               <a href="mailto:bezirk.nrw@igmetall.de">E-MAil: bezirk.nrw@igmetall.de</a>
             </p>
           </div>
-             <form role="form">
+           <!-- <form role="form">
             <div class="form-group row">
               <label for="gender" class="select-label">Anrede</label> 
              <div class="select-box"> 
@@ -1164,7 +1164,45 @@
              <p class="btn-blue">
               <button type="submit">Absenden</button>
            </p>         
-          </form>
+          </form> -->
+          <div class="csc-mailform">
+            <form method="post" enctype="multipart/form-data" class="form-group" action="index.php?id=37">
+              <ol>
+                <li class="csc-form-2 csc-form-element csc-form-element-select">
+                  <label for="field-2">Anrede</label>
+                  <select name="tx_form[Anrede]" id="field-2">
+                    <option value="3">Frau</option>
+                    <option value="4">Herr</option>
+                  </select>
+                </li>
+                <li class="csc-form-5 csc-form-element csc-form-element-fieldset">
+                  <fieldset>
+                    <ol>
+                      <li class="csc-form-6 csc-form-element csc-form-element-textline">
+                        <label for="field-6">Vorname*</label>
+                        <input type="text" name="tx_form[vorname]" id="field-6" class="form-control">
+                      </li>
+                      <li class="csc-form-7 csc-form-element csc-form-element-textline">
+                        <label for="field-7">Nachname*</label>
+                        <input type="text" name="tx_form[nachname]" id="field-7" class="form-control">
+                      </li>
+                    </ol>
+                  </fieldset>
+                </li>
+                <li class="csc-form-8 csc-form-element csc-form-element-textline">
+                  <label for="field-8">Email-Adresse</label>
+                  <input type="text" name="tx_form[Email-Adresse]" id="field-8" class="form-control">
+                </li>
+                <li class="csc-form-9 csc-form-element csc-form-element-textarea">
+                  <label for="field-9">Mitteilung*</label>
+                  <textarea rows="5" name="tx_form[Mitteilung]" id="field-9" cols="40" class="form-control"></textarea>
+                </li>
+                <li class="csc-form-10 csc-form-element csc-form-element-submit">
+                  <input type="submit" value="Absenden" name="tx_form[absenden]" id="field-10">
+                </li>
+              </ol>
+            </form>
+            </div>
         </div>
       </div>
       <div class="container">
