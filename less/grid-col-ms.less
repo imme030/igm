@@ -4,10 +4,8 @@
 @screen-ms-min: @screen-ms;
 @screen-ms-max: (@screen-sm-min - 1);
 
-// Redefined Extra Small max value
 @screen-xs-max-new: (@screen-ms-min - 1);
 
-// Common styles (see make-grid-columns() in bootstrap/mixins/_grid-framework.less)
 
 .col-ms-1,
 .col-ms-2,
@@ -116,7 +114,7 @@ display: inline-block !important;
 }
 }
 
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Generate the medium small columns
+//  Generate the medium small columns
 .make-ms-column(@columns; @gutter: @grid-gutter-width) {
   position: relative;
   // Prevent columns from collapsing when empty
@@ -150,7 +148,7 @@ display: inline-block !important;
 }
 
 
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NEW COLUMN MEDIUM SMALL ADDED
+//NEW COLUMN MEDIUM SMALL ADDED
 
 
 .make-grid-columns() {
@@ -165,7 +163,7 @@ display: inline-block !important;
   }
   .col(@index, @list) when (@index > @grid-columns) { // terminal
     @{list} {
-      // position: relative; // +++++++++++++++++++++++++++++++++++++++++++++++++++++++ this prevents equal heights, put it on the min-widths instead
+      // position: relative; // this prevents equal heights, put it on the min-widths instead
       // Prevent columns from collapsing when empty
       min-height: 1px;
       // Inner gutter via padding
@@ -188,8 +186,13 @@ display: inline-block !important;
   .col(@index, @list) when (@index > @grid-columns) { // terminal
     @{list} {
       float: left;
-      position: relative; //+++++++++++++++++++++++++++++++++++++++++++++++++++++ added here so that equal columns works
+      position: relative; //added here so that equal columns works
     }
   }
   .col(1); // kickstart it
 }
+
+
+.col-sm-5{.make-ms-column(5);}
+.col-sm-6{.make-ms-column(6);}
+.col-sm-7{.make-ms-column(7);}

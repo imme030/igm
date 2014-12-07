@@ -1,4 +1,5 @@
 .tile {
+	background-color: @brand-blue;
 		 figure {
 		 	&.blue-container {
 		 		height: auto;
@@ -12,11 +13,12 @@
 		 			}
 		 		}
 		 	}
+		 	.make-ms-column(6);
 			.make-sm-column(4);			
 			overflow: hidden;
 			padding: 0;	
-			h2 {margin-top: 0;}
-			h3 a {.font-size(24);}
+			h2 {margin-top: 0;.font-size(26);}
+			h3 a {.font-size(22);}
 			a {color: @white; .font-size(17);}
 			figcaption {
 		        font-style: normal;
@@ -40,10 +42,8 @@
 }
 @media (min-width: @screen-sm-min) {
 	.tile {
-			 figure{
-			 	max-height: 187px;
-			 	&.blue-container {
-			 		height: 187px;
+			 figure{				
+			 	&.blue-container {			 		
 			 		h2 {.font-size(25);}
 			 	} 
 			 	figcaption {
@@ -54,11 +54,10 @@
 }
 @media (min-width: @screen-md-min) {
 	.tile {
-			 figure{
-			 	max-height: 220px;
-			 	&.blue-container {
-			 		height: 220px;
-			 	} 
+			 figure{			 
+			 	&.blue-container {			 		
+			 		h2 {.font-size(32);}
+			 	} 			 	
 			 	figcaption {
 			 		padding-top: 100px;
 			 	}
