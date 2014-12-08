@@ -6,7 +6,7 @@
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0 10px 0 0; padding: 0; list-style: none;}
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
 
 .slider02, .slider03, .slider04,.slider05, .slider06,.slider07{
     h2 {.font-size(30);}
@@ -232,7 +232,7 @@ img.out{
         padding-bottom: 40px;
     }
     .slides{  
-        min-height: 250px;
+        min-height: 230px;
         margin:75px 0 0 0;
     } 
     .slides h2{
@@ -603,7 +603,7 @@ img.out{
 /*   
                      - - - - - - - -  slider08*/
 .slider08{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     .flexslider{
         position:relative;
     }
@@ -613,7 +613,7 @@ img.out{
     }
     .flex-control-paging{
         position: absolute;
-        top: 60%;
+        bottom: 30px;
         width: 100%;
         text-align:center;
     }
@@ -744,6 +744,7 @@ img.out{
     .slider03 {
         .flex-control-paging { left: 220px; }             
     }
+     .slider08 .slides { height: 210px; }
 }
 
 @media (min-width: @screen-ms){
@@ -756,9 +757,6 @@ img.out{
 }
 @media (min-width: @screen-sm){
      .slider08 .slides { height: 280px; }  
-     .slider08 .flex-control-paging {
-      top: 85%;
-    }
 }
 @media (min-width: @screen-md){
   .slider02 .imgstack {
@@ -769,7 +767,7 @@ img.out{
         position: absolute;
         margin-top: 72px;        
         }
-    .slider08 .slides { height: 350px; }
+    .slider08 .slides { height: 440px; }
 }
 @media (min-width: @screen-lg){
     .slider08 .slides { height: 480px; }
