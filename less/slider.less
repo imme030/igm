@@ -178,12 +178,16 @@ img.out{
         -webkit-box-shadow: 0 0 10px 0 #000000;
         box-shadow: 0 0 10px 0 #000000;
     }
-    .carousel img{
+    .carousel figure{
         height:65px;
-        width:auto;
         width:83px;
+        overflow: hidden;
+        left:15px;
         position:absolute;
         left:15px;
+    }
+    .carousel img{
+        width:100%;        
     }
     .carousel header ul{
         list-style-type: none;
@@ -673,10 +677,6 @@ img.out{
 }
 @media (max-width: @screen-xs-max){
     // Bildergroessen
-    .topslider .display img {
-        width: 150%;
-        max-width: 150%;
-    }
     .stackslider .imgstack{ 
          img {
              width: 60%;
