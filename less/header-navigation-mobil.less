@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: @screen-sm){
+@media (min-width: @screen-ms){
   .navbar-toggle {
     margin-top: 28px;
     .iconbar {
@@ -78,10 +78,11 @@
     }
   }
   .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-  max-height: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
 }
-}
-@media (min-width: @screen-sm)and(max-width: @screen-sm-max){
+@media (min-width: @screen-ms)and(max-width: @screen-sm-max){
   .header-mainnav.navbar-fixed-top {
     .navbar-collapse ul{margin-top: 10px;}
     min-height: 95px;  

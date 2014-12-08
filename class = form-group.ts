@@ -12,7 +12,7 @@ postProcessor {
 			success = TEXT
 			success {
 				value (
-                <p><strong>Danke für Ihre Nachricht</strong></p>
+                <p>Danke für Ihre Nachricht</p>
                 <p>Wir werden sobald wie möglich mit Ihnen in Kontakt treten.</p>
 				)
 			}

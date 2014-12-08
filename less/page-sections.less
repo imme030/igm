@@ -13,7 +13,7 @@
 			margin-left: @grid-gutter-width/2;
 			margin-right: @grid-gutter-width/2;
 		}
-		padding-top: 260px;
+		padding-top: 60px;
 		h1, h2 {
 		color: @white;		
 		&.brand-text {padding: 5px 10px;}
@@ -73,9 +73,13 @@
 		}
 	}	
 }
-@media (min-width: @screen-md-min) {
+@media (min-width: @screen-ms-min) {
 	.header-modul  {
-		.part1 h1, h2 {width: 70%;}
+		.part1 {
+			padding-top: 260px;
+			h1, h2 {width: 70%;}
+		}
+
 		.part3 .row {
 			h2 {.font-size(32);}
 			p{

@@ -6,9 +6,11 @@
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+.flex-direction-nav {margin: 0 10px 0 0; padding: 0; list-style: none;}
 
-
+.slider02, .slider03, .slider04,.slider05, .slider06,.slider07{
+    h2 {.font-size(30);}
+}
 .slides img.stacked{
     display:none;
 }
@@ -37,7 +39,7 @@ img.out{
 .stackslider .imgstack img { 
 	position: absolute;
 	border: 5px solid #f3f3f3;
-	box-shadow: 1px 1px 2px #444;
+	box-shadow: 1px 1px 2px @gray;
 	display:block;
     width:100%;
     height:auto;
@@ -313,8 +315,60 @@ img.out{
 /*                        - - - - - - - -  slider03*/
 .slider03{
     padding-bottom:40px;
-}
+    .imgstack{
+        width:140px;
+        position:absolute;
+        left:0;
+        bottom:140px;
+    }
+    .flexslider{
+        padding: 0 0 60px 60px;
+        position:relative;
+    }
+    blockquote{
+        .font-size(25);
+    }
+    blockquote:before,
+    blockquote:after{
+        display:none;
+    }
+    blockquote footer{
+        margin-left:100px;
+        color:@gray;
+        font-size:0.6em;
+        font-style: normal;
+    }
+    blockquote footer:before{
+        content:"";
+    }
 
+    .flex-direction-nav{
+        display:none;
+    }
+    .flex-control-paging{
+        position:absolute;
+        overflow:hidden;
+        left:330px;
+        bottom:100px;
+    }
+    .flex-control-paging li{
+        float:left;
+        margin-right:8px;
+    }
+    .flex-control-paging a{
+        text-indent:-999px;
+        display:block;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        border:1px solid @gray-medium;
+        background: @white;
+        cursor:pointer;
+    }
+    .flex-control-paging a.flex-active{
+        background: @gray-medium;
+    }
+}
 .slider03:before, .slider04 .flexslider:before{
     .quote-i;
     color:@brand-red;
@@ -324,62 +378,6 @@ img.out{
     top: 0;
     line-height: 0.8em;
 }
-
-.slider03  .imgstack{
-    width:140px;
-    position:absolute;
-    left:0;
-    bottom:140px;
-}
-.slider03  .flexslider{
-    padding: 0 0 60px 60px;
-    position:relative;
-}
-.slider03 blockquote{
-    font-size:1.8em;
-}
-.slider03 blockquote:before,
-.slider03 blockquote:after{
-    display:none;
-}
-.slider03 blockquote footer{
-    margin-left:100px;
-    color:@gray;
-    font-size:0.6em;
-    font-style: normal;
-}
-.slider03 blockquote footer:before{
-    content:"";
-}
-
-.slider03 .flex-direction-nav{
-    display:none;
-}
-.slider03 .flex-control-paging{
-    position:absolute;
-    overflow:hidden;
-    left:330px;
-    bottom:100px;
-}
-.slider03 .flex-control-paging li{
-    float:left;
-    margin-right:8px;
-}
-.slider03 .flex-control-paging a{
-    text-indent:-999px;
-    display:block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border:1px solid @gray-medium;
-    background: @white;
-    cursor:pointer;
-}
-.slider03 .flex-control-paging a.flex-active{
-    background: @gray-medium;
-}
-
-
 
 
 /*                        - - - - - - - -  slider04*/
@@ -500,7 +498,7 @@ img.out{
         li{
             float:left;
             height:25px;
-            width: 30px;
+            width: 35px;
             overflow:hidden;
             margin-bottom: 25px;
             text-align:center;
@@ -603,16 +601,11 @@ img.out{
     }
     .slides {
         overflow: hidden;
-        max-height: 450px;
-    }
-    h3{
-        margin: 0;
-        border-bottom:1px solid @gray-medium;
-        padding-bottom: 10px;
+        max-height: 350px;
     }
     .flex-control-paging{
         position: absolute;
-        top: 85%;
+        top: 60%;
         width: 100%;
         text-align:center;
     }
@@ -664,36 +657,41 @@ img.out{
 /* Media Queries
 ***********************/
 @media (max-width: 380px){
-    .stackslider .imgstack{  height: 250px; } 
-    .slider04 .imgstack {margin-left: 10px;}   
-}
-@media (min-width: 380px){
-    .stackslider .imgstack{ height: 400px;  }  
-}
-@media (min-width: 500px){
-    
-}
-@media (min-width: @screen-sm){
-    .stackslider .imgstack{ height: auto;  }  
-  .slider02 .imgstack {
-      margin-left: 0;
+    .slider02.stackslider, .slider03.stackslider{
+        .imgstack{ height: 100px;  } 
     }
-    .topslider .preview{  background:url('../Images/trapezoid.png') no-repeat right bottom;}  
+    .slider04.stackslider .imgstack{height: 200px; } 
 }
-@media (min-width: @screen-md){
-  .slider02 .imgstack {
-      margin-left: 40px;
-    }  
-    .special-img 
-    img {
-        position: absolute;
-        margin-top: 72px;        
-        }
+@media (min-width: 381px)and(max-width: @screen-xs-max){
+    .slider02.stackslider, .slider03.stackslider, .slider04.stackslider{
+         .imgstack{height: 230px; } 
+    }
+     .slider04.stackslider .imgstack{height: 300px; } 
+   
 }
 @media (max-width: @screen-xs-max){
+    // Bildergroessen
+    .topslider .display img {
+        width: 150%;
+        max-width: 150%;
+    }
+    .stackslider .imgstack{ 
+         img {
+             width: 60%;
+            margin: 10px;
+            top:0;
+         }
+     } 
     .topslider {       
         .preview{ background:url('../Images/trapezoid-mobil.png') no-repeat right bottom;  }
     }
+    //Schriftgroessen
+    h2 {.font-size(24);}
+    .slider03, .slider04 {
+        blockquote{
+            .font-size(18);
+        }
+    }    
     .stackslider .flexslider {overflow: visible; padding-bottom: 0;}
     .slider03 {
         position: relative;
@@ -719,27 +717,50 @@ img.out{
     }
 }
 @media (max-width: @screen-sm-max){
-    .stackslider .imgstack {margin: 0 auto;}
-     .slider04 {
-        .flexslider {padding-bottom: 10px;}
-        .flex-control-paging {
-               left: 62px;
-               bottom: 0;
-             }             
-         }
-}
-@media (max-width: @screen-ms-max){
     .topslider {
         .carousel {bottom: 55px;}
         .preview{
             padding: 110px 20px 180px;
             width: 100%;
         }
-    }   
-}
-@media (max-width: 480px){
-     .topslider .display img {
-        width: 150%;
-        max-width: 150%;
+    } 
+    .slider03, .slider04 {
+        .flexslider {padding-bottom: 10px;}
+        .flex-control-paging {
+           left: 62px;
+           bottom: 0;
+         }             
     }
+    .slider03 {
+        .flex-control-paging { left: 220px; }             
+    }
+}
+
+@media (min-width: @screen-ms){
+    .stackslider .imgstack{ height: auto;  }  
+      .slider02 .imgstack {
+          margin-left: 0;
+        }
+    .topslider .preview{  background:url('../Images/trapezoid.png') no-repeat right bottom;}  
+    .slider08 .slides { height: 250px; }
+}
+@media (min-width: @screen-sm){
+     .slider08 .slides { height: 280px; }  
+     .slider08 .flex-control-paging {
+      top: 85%;
+    }
+}
+@media (min-width: @screen-md){
+  .slider02 .imgstack {
+      margin-left: 40px;
+    }  
+    .special-img 
+    img {
+        position: absolute;
+        margin-top: 72px;        
+        }
+    .slider08 .slides { height: 350px; }
+}
+@media (min-width: @screen-lg){
+    .slider08 .slides { height: 480px; }
 }
