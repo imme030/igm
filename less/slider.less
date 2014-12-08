@@ -458,6 +458,7 @@ img.out{
     margin-right:75px;
     width:auto !important;
     }
+    .slides img {max-width: 230px;}
     .flex-control-paging{
     display:none;
     }
@@ -662,6 +663,12 @@ img.out{
 
 /* Media Queries
 ***********************/
+@media (max-width: 480px){
+     .topslider .display img {
+        width: 150%;
+        max-width: 150%;
+        }
+}
 @media (max-width: 380px){
     .slider02.stackslider, .slider03.stackslider{
         .imgstack{ height: 100px;  } 
