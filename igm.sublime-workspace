@@ -99,7 +99,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 84663,
+				"buffer_size": 115246,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,15 +107,23 @@
 			"file": "css/igm.css",
 			"settings":
 			{
-				"buffer_size": 185949,
+				"buffer_size": 198733,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/igm.js",
+			"settings":
+			{
+				"buffer_size": 1256,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "less/variablen-theme.less",
 			"settings":
 			{
-				"buffer_size": 2709,
+				"buffer_size": 3708,
 				"line_ending": "Windows"
 			}
 		},
@@ -123,7 +131,7 @@
 			"file": "less/type.less",
 			"settings":
 			{
-				"buffer_size": 1099,
+				"buffer_size": 1141,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +139,7 @@
 			"file": "less/partials-tile-imgages.less",
 			"settings":
 			{
-				"buffer_size": 1314,
+				"buffer_size": 1565,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +147,7 @@
 			"file": "less/igm.less",
 			"settings":
 			{
-				"buffer_size": 3211,
+				"buffer_size": 3239,
 				"line_ending": "Windows"
 			}
 		}
@@ -484,7 +492,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -493,7 +501,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 84663,
+						"buffer_size": 115246,
 						"regions":
 						{
 						},
@@ -515,7 +523,7 @@
 						"translation.y": 684.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -524,7 +532,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 185949,
+						"buffer_size": 198733,
 						"regions":
 						{
 						},
@@ -544,16 +552,47 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "js/igm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1256
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Blackboard.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "less/variablen-theme.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2709,
+						"buffer_size": 3708,
 						"regions":
 						{
 						},
@@ -573,16 +612,16 @@
 						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "less/type.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1099,
+						"buffer_size": 1141,
 						"regions":
 						{
 						},
@@ -602,16 +641,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "less/partials-tile-imgages.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1314,
+						"buffer_size": 1565,
 						"regions":
 						{
 						},
@@ -632,16 +671,16 @@
 						"translation.y": 171.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "less/igm.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3211,
+						"buffer_size": 3239,
 						"regions":
 						{
 						},
@@ -661,7 +700,7 @@
 						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -734,12 +773,16 @@
 		"selected_items":
 		[
 			[
-				"",
-				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\less\\igm-nrw.sublime-project"
+				"igm",
+				"D:\\Aktuelle Jobs\\sublime-projelte\\igm-nrw.sublime-project"
 			],
 			[
 				"kein",
-				"D:\\Aktuelle Jobs\\keine gentechnik\\html\\keine-gentechnik.sublime-project"
+				"D:\\Aktuelle Jobs\\sublime-projelte\\keine gentechnik.sublime-project"
+			],
+			[
+				"",
+				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\less\\igm-nrw.sublime-project"
 			],
 			[
 				"keine",
