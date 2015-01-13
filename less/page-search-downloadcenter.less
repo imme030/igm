@@ -54,7 +54,7 @@
 		padding-top: 15px;
 		span, p{
 			color:@black;			
-			.font-size(16);
+			.font-size(15);
 			font-weight: 600;
 			vertical-align: top;
 			display: inline-block;	
@@ -67,7 +67,7 @@
 		li {
 			display: inline-block;
 			list-style: none;	
-			.font-size(18);		
+			.font-size(15);		
 			&.previous, &.next, &:nth-child(2) {
 				&:before {content: " ";}
 			}
@@ -75,7 +75,7 @@
 				a {
 					.font-size(3);
 				color: @white;
-				&:before, &:after {color: @gray; .font-size(20);}
+				&:before, &:after {color: @gray; .font-size(12);}
 				}				
 			}
 			&.previous a:after {.arrow-left-i;}
@@ -93,7 +93,7 @@
 	}
 	.pagination {		
 		margin: 0;
-		.divider {.font-size(18);font-weight: 600;}
+		.divider {.font-size(15);font-weight: 600;}
 		> li > a{
 			padding: 0 1px;
 			float: none;
@@ -101,11 +101,11 @@
 			margin: 0;
 			.border-radius(0);
 			border: 0;
-			.font-size(16);
+			.font-size(15);
 			font-weight: 600;
 			&:hover {background-color: transparent;}
 			&.arrows {padding: 8px 0px 0 10px;}
-			i {.font-size(22);}
+			i {.font-size(12);}
 			&.inactive i {
 				color: @gray-medium;
 			}
