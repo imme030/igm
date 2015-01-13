@@ -542,11 +542,10 @@ img.out{
 .slider07 {
     .make-xs-column(12);
 }
-.slider07 h3{
-        border-bottom: 1px solid @white;
-        margin: 20px 0 ;    
-        padding-bottom: 10px;
-
+.slider07 h3.csc-firstHeader{
+    margin: 20px 0 ;
+    border-bottom:1px solid #9cd;
+    padding-bottom: 10px;
 }
 .slider07 .flex-control-paging{
     display:none;
@@ -596,6 +595,8 @@ img.out{
     font-size: 1.1em;
     color:@white;
     font-weight: 400;
+    border-bottom:1px solid #9cd;
+    margin-bottom:15px;
     padding-bottom:15px;
 }
 .slider07 .slides p{
@@ -615,7 +616,7 @@ img.out{
     }
     .flex-control-paging{
         position: absolute;
-        top: 20px;
+        bottom: 30px;
         width: 100%;
         text-align:center;
     }
@@ -632,8 +633,6 @@ img.out{
         border: 1px solid @white;
         background: transparent;
         cursor: pointer;
-        box-shadow: 0 0 10px 0 #000000;
-        -webkit-box-shadow: 0 0 10px 0 #000000;
     }
     .flex-control-paging a.flex-active {
         background: @white;
@@ -691,6 +690,7 @@ img.out{
     // Bildergroessen
     .stackslider .imgstack{ 
          img {
+             width: 60%;
             margin: 10px;
             top:0;
          }
