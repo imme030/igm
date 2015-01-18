@@ -99,7 +99,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 115246,
+				"buffer_size": 115263,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +107,7 @@
 			"file": "css/igm.css",
 			"settings":
 			{
-				"buffer_size": 198733,
+				"buffer_size": 199019,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +131,7 @@
 			"file": "less/type.less",
 			"settings":
 			{
-				"buffer_size": 1141,
+				"buffer_size": 1144,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "less/partials-tile-imgages.less",
 			"settings":
 			{
-				"buffer_size": 1565,
+				"buffer_size": 1632,
 				"line_ending": "Windows"
 			}
 		},
@@ -501,7 +501,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 115246,
+						"buffer_size": 115263,
 						"regions":
 						{
 						},
@@ -532,7 +532,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 198733,
+						"buffer_size": 199019,
 						"regions":
 						{
 						},
@@ -621,7 +621,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1141,
+						"buffer_size": 1144,
 						"regions":
 						{
 						},
@@ -650,7 +650,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1565,
+						"buffer_size": 1632,
 						"regions":
 						{
 						},
@@ -769,9 +769,17 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 750.0,
 		"selected_items":
 		[
+			[
+				"",
+				"D:\\Jobs\\sublime projects\\gothein-design.sublime-project"
+			],
+			[
+				"goth",
+				"D:\\Jobs\\sublime projects\\gothein-design.sublime-project"
+			],
 			[
 				"igm",
 				"D:\\Aktuelle Jobs\\sublime-projelte\\igm-nrw.sublime-project"
@@ -779,10 +787,6 @@
 			[
 				"kein",
 				"D:\\Aktuelle Jobs\\sublime-projelte\\keine gentechnik.sublime-project"
-			],
-			[
-				"",
-				"D:\\Aktuelle Jobs\\igm_nrw\\webtemplate\\igm\\less\\igm-nrw.sublime-project"
 			],
 			[
 				"keine",
@@ -793,7 +797,7 @@
 				"D:\\Aktuelle Jobs\\evelyn-hendreich\\www\\foundation\\hendreich.sublime-project"
 			]
 		],
-		"width": 380.0
+		"width": 570.0
 	},
 	"select_symbol":
 	{

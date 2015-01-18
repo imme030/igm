@@ -1,0 +1,49 @@
+
+.topslider {
+    background: #e60005;
+}
+
+.topslider .images li{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+@media (min-width: 480px){
+    .topslider .preview {
+        background-image: url('../Images/trapezoid.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media (max-width: 1001px){
+    .topslider .preview {
+        padding: 110px 20px 180px;
+        width: 100%;
+        background-image: url('../Images/trapezoid-mobil-wide.png') !important;
+        background-size:cover;
+    }
+    .topslider .images li{
+        background-position:top center;
+    }
+}
+
+@media (max-width: 480px){
+    .topslider{
+        overflow:visible;
+    }
+    .topslider .carousel .slides{
+        width:100% !important;
+        background:#fff;
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+    .topslider .carousel .slides>li{
+        width:100% !important;
+        float: none !important;
+        border-bottom:1px solid #ddd;
+    }
+    .topslider #scrolldown{
+        display:none;
+    }
+}
