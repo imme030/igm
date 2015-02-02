@@ -18,7 +18,9 @@ $(function(){
                 animationLoop: false,
                 slideshow: false,
                 sync: "#top-carousel",
+                /*
                 start: function(slider){
+                    console.log('__start',slider);
                     slider.currentSlide = -1
                     slider.flexAnimate(0);
                     slider.$preload = $(new Image());
@@ -26,12 +28,14 @@ $(function(){
                         var n = slider.$preload.data('ndx');
                         $('.images li').eq(n).css('background-image','url('+this.src+')');
                     });
-                },
+                    console.log('__start',slider.$preload);
+                }, */
                 before: function(slider){
                     var n = slider.animatingTo;
                     $('.display .preview *').fadeOut();
                 },
                 after: function(slider){
+                    console.log('after',slider)
                     var n = slider.animatingTo;
                     var el = $('.carousel .slides>li').eq(n);
                     var img = $('.carousel .slides img').eq(n);
@@ -142,6 +146,19 @@ $(function(){
         });
         $(p).find('.carousel').attr('id','top-carousel').flexslider(flexoptions.top.carousel);
         $(p).find('.images').attr('id','top-images').flexslider(flexoptions.top.images);
+        
+        var slider = $('#top-images').data('flexslider');
+        
+        slider.$preload = $(new Image());
+        slider.$preload.on('load',function(ev){
+            var n = slider.$preload.data('ndx');
+            $('.images li').eq(n).css('background-image','url('+this.src+')');
+        });
+        slider.currentSlide = -1
+        slider.flexAnimate(0);
+        
+        console.log('top-images slider',slider);
+        
     });
     // initialize caroussels.
     $('.bandslider').each(function(i,p){ 
@@ -164,14 +181,24 @@ $(function(){
             $(stack).height(Math.max.apply(null,maxH));
         });
         //console.log(maxH,Math.max.apply(null,maxH));
+        
         var w = $(window).height();
         if($(window).width()<1000){
+            $('.topslider').height(w);
             w = w - 400;
         }
         $('.topslider .images li').height(w);
+        
         var m = 0
         if($(window).width()<480){
             m = $('.carousel .slides').height();
+            
+            w = $(window).height();
+            $('.topslider .preview').css('height','auto');
+            var p = $('.topslider .preview').height();
+            
+            $('.topslider .images li').height(w);
+            $('.topslider').height(m+p);
         }
         $('.topslider').css('margin-bottom',m);
     }
