@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     },
     concat: {
       js: {
-        src: ['js/jquery2.1.3.js','js/bootstrap.js','js/flexslider/jquery.flexslider-min.js', 'js/stackslider/stackslider.js','js/bootstrap.min.js', 'js/document-ready.js'],
+        src: ['js/jquery2.1.3.js','js/bootstrap.js','js/igm.js','js/flexslider/jquery.flexslider-min.js', 'js/stackslider/stackslider.js'],
         dest: 'js/scripts.js'
       }
      // dist: {
