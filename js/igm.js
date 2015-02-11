@@ -31,7 +31,15 @@
           return $('#popover-share-content').html();
         }
     });
-
-});
+  });
+   // Text des Sliders Beschneiden
+    $(".topslider .slides h4 a").dotdotdot({
+      ellipsis  : '... '
+    });
 
   });
+
+
+
+
+
