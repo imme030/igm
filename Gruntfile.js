@@ -19,10 +19,6 @@ module.exports = function(grunt) {
         src: ['js/jquery2.1.3.js','js/bootstrap.js','js/jquery.dotdotdot.js','js/igm.js','js/flexslider/jquery.flexslider-min.js', 'js/stackslider/stackslider.js'],
         dest: 'js/scripts.js'
       }
-     // dist: {
-      //  src: 'js/*.js',
-      //  dest: 'js/igmnrw.js'
-      //}
     },
    uglify: {
         dist: {

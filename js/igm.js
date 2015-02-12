@@ -36,7 +36,6 @@
     $(".topslider .slides h4 a").dotdotdot({
       ellipsis  : '... '
     });
-
   });
 
 

@@ -99,7 +99,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 115263,
+				"buffer_size": 118336,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +107,7 @@
 			"file": "css/igm.css",
 			"settings":
 			{
-				"buffer_size": 199019,
+				"buffer_size": 200371,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,8 +115,8 @@
 			"file": "js/igm.js",
 			"settings":
 			{
-				"buffer_size": 1256,
-				"line_ending": "Unix"
+				"buffer_size": 1375,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -131,7 +131,7 @@
 			"file": "less/type.less",
 			"settings":
 			{
-				"buffer_size": 1144,
+				"buffer_size": 1235,
 				"line_ending": "Windows"
 			}
 		},
@@ -147,7 +147,7 @@
 			"file": "less/igm.less",
 			"settings":
 			{
-				"buffer_size": 3239,
+				"buffer_size": 3266,
 				"line_ending": "Windows"
 			}
 		}
@@ -501,7 +501,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 115263,
+						"buffer_size": 118336,
 						"regions":
 						{
 						},
@@ -532,7 +532,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 199019,
+						"buffer_size": 200371,
 						"regions":
 						{
 						},
@@ -561,15 +561,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1256,
+						"buffer_size": 1375,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1256,
-								1256
+								0,
+								0
 							]
 						],
 						"settings":
@@ -621,7 +621,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1144,
+						"buffer_size": 1235,
 						"regions":
 						{
 						},
@@ -680,7 +680,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3239,
+						"buffer_size": 3266,
 						"regions":
 						{
 						},
@@ -774,7 +774,7 @@
 		[
 			[
 				"",
-				"D:\\Jobs\\sublime projects\\gothein-design.sublime-project"
+				"D:\\Jobs\\sublime projects\\igm.sublime-project"
 			],
 			[
 				"goth",
