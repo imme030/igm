@@ -1,4 +1,61 @@
 $(function(){
+    
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    var addTap = function(el,func){
+    
+        // TAP detection by http://www.gianlucaguarini.com/
+        var getPointerEvent = function(event) {
+            return event.originalEvent.targetTouches ? event.originalEvent.targetTouches[0] : event;
+        };
+        var $touchArea = $(el),
+            touchStarted = false, // detect if a touch event is sarted
+            currX = 0,
+            currY = 0,
+            cachedX = 0,
+            cachedY = 0;
+        
+        //setting the events listeners
+        $touchArea.on('touchstart mousedown',function (e){
+                    //e.preventDefault(); 
+            var pointer = getPointerEvent(e);
+            // caching the current x
+            cachedX = currX = pointer.pageX;
+            // caching the current y
+            cachedY = currY = pointer.pageY;
+            // a touch event is detected      
+            touchStarted = true;
+            //$touchArea.text('Touchstarted');
+            console.log('Touchstarted');
+            // detecting if after 200ms the finger is still in the same position
+            setTimeout(function (){
+                if ((cachedX === currX) && !touchStarted && (cachedY === currY)) {
+                    // Here you get the Tap event
+                    //$touchArea.text('Tap');
+                    console.log('Tap');
+                    func(e);
+                }
+            },200);
+        });
+        $touchArea.on('touchend mouseup touchcancel',function (e){
+                    //e.preventDefault();
+            // here we can consider finished the touch event
+            touchStarted = false;
+            //$touchArea.text('Touchended');
+            console.log('Touchended');
+        });
+        $touchArea.on('touchmove mousemove',function (e){
+                    //e.preventDefault();
+            var pointer = getPointerEvent(e);
+            currX = pointer.pageX;
+            currY = pointer.pageY;
+            if(touchStarted) {
+                // here you are swiping
+                //$touchArea.text('Swiping');
+                console.log('Swiping');
+            }
+        });
+    };
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
     var flexoptions = {
         top: {
             carousel:{
@@ -106,6 +163,7 @@ $(function(){
             }
         }
     }
+    
     // initialize stacks.
     $('.stackslider').each(function(i,p){ 
         var stack = $(p).find('.imgstack').attr('id','stack-'+i);
@@ -126,6 +184,7 @@ $(function(){
         $(p).find('.flexslider').flexslider(flexoptions.stack);
     });
     // initialize top. ()
+    
     $('.topslider').each(function(i,p){
         $(p).height($(window).height());
         $('#scrolldown').click(function(){
@@ -138,12 +197,35 @@ $(function(){
             li.css({
                 'background-image':'url("'+$(l).attr('src')+'")',
                 'height':$(window).height()+'px'
-            });
+            }).attr('id','slide_'+n);
+            $(l).parents('li').attr('id','thumb_'+n);
             //$(l).clone().appendTo(li);
         });
-        $(p).find('.carousel').attr('id','top-carousel').flexslider(flexoptions.top.carousel);
-        $(p).find('.images').attr('id','top-images').flexslider(flexoptions.top.images);
         
+        
+        if (Modernizr.touch) {   
+            $('.topslider .carousel a').on('click',function(ev){
+                ev.preventDefault(); 
+            });
+            addTap('.carousel .slides li',function(e){ 
+                console.log(e)
+                var n = $(e.target).parents('li').attr('id').split('_')[1];
+                $('.images .slides li').hide();
+                $('.images .slides #slide_'+n).css('opacity',1).fadeIn(100);
+                //
+                var el = $('.carousel .slides>li').eq(n);
+                var img = $('.carousel .slides img').eq(n);
+                slider.$preload.attr('src',img.data('hires'));
+                slider.$preload.data('ndx',n);
+                $('.display .preview').empty().append(el.html());
+                
+                $("html, body").animate({scrollTop:0}, 1200, 'swing');
+            });
+        } else {   
+            $(p).find('.carousel').attr('id','top-carousel').flexslider(flexoptions.top.carousel);
+        }
+        $(p).find('.images').attr('id','top-images').flexslider(flexoptions.top.images);
+
         var slider = $('#top-images').data('flexslider');
         
         slider.$preload = $(new Image());
@@ -169,6 +251,7 @@ $(function(){
             slideshow: false
         });
     });
+    
     var adjustSliders = function(){
         $('.imgstack').each(function(i,stack){
             var maxH = [];
@@ -188,6 +271,7 @@ $(function(){
         
         var m = 0
         if($(window).width()<480){
+        //if (Modernizr.touch) {  
             m = $('.carousel .slides').height() -100;
             
             w = $(window).height();
@@ -197,68 +281,11 @@ $(function(){
             $('.topslider .images li').height(w);
             $('.topslider').height(p+w);
             
-            addTap('.carousel .slides li',function(p){ 
-                $("html, body").animate({scrollTop:0}, 1200, 'swing');
-            });
         }
         $('.topslider').css('margin-bottom',m);
     }
+    adjustSliders();
     setTimeout(function(){adjustSliders();},2000);
     $( window ).resize(function() { adjustSliders(); });
 
-    
-    var addTap = function(el,func){
-    
-        // TAP detection by http://www.gianlucaguarini.com/
-        var getPointerEvent = function(event) {
-            return event.originalEvent.targetTouches ? event.originalEvent.targetTouches[0] : event;
-        };
-        var $touchArea = $(el),
-            touchStarted = false, // detect if a touch event is sarted
-            currX = 0,
-            currY = 0,
-            cachedX = 0,
-            cachedY = 0;
-        
-        //setting the events listeners
-        $touchArea.on('touchstart mousedown',function (e){
-                    //e.preventDefault(); 
-            var pointer = getPointerEvent(e);
-            // caching the current x
-            cachedX = currX = pointer.pageX;
-            // caching the current y
-            cachedY = currY = pointer.pageY;
-            // a touch event is detected      
-            touchStarted = true;
-            //$touchArea.text('Touchstarted');
-            console.log('Touchstarted');
-            // detecting if after 200ms the finger is still in the same position
-            setTimeout(function (){
-                if ((cachedX === currX) && !touchStarted && (cachedY === currY)) {
-                    // Here you get the Tap event
-                    //$touchArea.text('Tap');
-                    console.log('Tap');
-                    func();
-                }
-            },200);
-        });
-        $touchArea.on('touchend mouseup touchcancel',function (e){
-                    //e.preventDefault();
-            // here we can consider finished the touch event
-            touchStarted = false;
-            //$touchArea.text('Touchended');
-            console.log('Touchended');
-        });
-        $touchArea.on('touchmove mousemove',function (e){
-                    //e.preventDefault();
-            var pointer = getPointerEvent(e);
-            currX = pointer.pageX;
-            currY = pointer.pageY;
-            if(touchStarted) {
-                // here you are swiping
-                //$touchArea.text('Swiping');
-                console.log('Swiping');
-            }
-        });
-    };
 });
